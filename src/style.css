@@ -94,3 +94,21 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.hero-part{
+  background-image: url('src/assets/hero-mobile.png'), url('src/assets/hero-desktop.png');
+  background-position: left bottom, right bottom;
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  width: 100px, 200px;
+  height: 100px, 100px;
+}
+
+.storyline-images{
+  background-image: url('src/assets/storyline-frame.png');
+  background-position: left bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
