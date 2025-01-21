@@ -95,6 +95,44 @@ button:focus-visible {
   }
 }
 
+.proofreader-rectangle{
+  border: 2px solid #3003f8;
+  padding: 4rem;
+  width: 45rem;
+  font-family: psfournier-std, sans-serif;
+  font-weight: 400;
+}
+
+.fa-lightbulb {
+  color: goldenrod;
+  /* font-size: 24px; */
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social ul li a {
+  display: inline-flex;
+  align-items: center;
+  color: #ecf0f1;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social ul li a:hover {
+  color: #f1c40f;
+}
+
+.footer-social ul li a i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
 .hero-part{
   background-image: url('src/assets/hero-mobile.png'), url('src/assets/hero-desktop.png');
   background-position: left bottom, right bottom;
@@ -174,4 +212,31 @@ button:focus-visible {
   background-repeat: no-repeat, no-repeat;
   width: 100px, 100px;
   height: 100px, 100px;
+}
+
+.section-p-intro{
+  background-image: url('src/assets/daughters-left.png'), url('src/assets/daughters-right.png') ;
+  background-position: left bottom, right bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat, no-repeat;
+  width: 100px, 100px;
+  height: 100px, 100px;
+}
+
+.section-c{
+  background-image: url('src/assets/handleft.png'), url('src/assets/handright.png'),url('src/assets/handfight.png') ;
+  background-position: left bottom, right bottom, right bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  width: 100px, 100px, 100px;
+  height: 100px, 100px, 100px;
+}
+
+.section-u{
+  background-image: url('src/assets/fireleft.png'), url('src/assets/fireright.png') ;
+  background-position: left bottom, right bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat, no-repeat;
+  width: 100px, 100px;
+  height: 200px, 200px;
 }
