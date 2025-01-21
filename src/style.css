@@ -104,7 +104,7 @@ button:focus-visible {
   height: 100px, 100px;
 }
 
-.storyline-images{
+.section-about-plantin{
   background-image: url('src/assets/storyline-frame.png');
   background-position: left bottom;
   /* background-size: auto, cover; */
