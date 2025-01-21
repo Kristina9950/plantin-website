@@ -112,3 +112,66 @@ button:focus-visible {
   width: 100px;
   height: 100px;
 }
+
+.section-ss-intro{
+  background-image: url('src/assets/ss-intro-image.png');
+  background-position: left bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.bible-hover{
+  background-image: url('src/assets/bible.png');
+  background-position: left bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.bible-languages{
+  background-image: url('src/assets/languageglobe.png');
+  background-position: left bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.section-a-intro{
+  background-image: url('src/assets/target-left.png'), url('src/assets/target-right.png') ;
+  background-position: left bottom, right bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat, no-repeat;
+  width: 100px, 100px;
+  height: 100px, 100px;
+}
+
+.religious-communities{
+  background-image: url('src/assets/religion-frame.png'), url('src/assets/religion-paper.png') ;
+  background-position: left bottom, right bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat, no-repeat;
+  width: 100px, 100px;
+  height: 100px, 100px;
+}
+
+.scholars{
+  background-image: url('src/assets/scholars-frame.png'), url('src/assets/scholars-paper.png') ;
+  background-position: left bottom, right bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat, no-repeat;
+  width: 100px, 100px;
+  height: 100px, 100px;
+}
+
+.middle-class{
+  background-image: url('src/assets/middleclass-frame.png'), url('src/assets/middleclass-paper.png') ;
+  background-position: left bottom, right bottom;
+  /* background-size: auto, cover; */
+  background-repeat: no-repeat, no-repeat;
+  width: 100px, 100px;
+  height: 100px, 100px;
+}
