@@ -11,30 +11,54 @@
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="#about-plantin">Christophe Plantin</a></li>
-        <li><a href="#about-identity">Visual Identity</a></li>
-        <li><a href="#about-strategies">Marketing Strategies</a></li>
-        <li>
-          <select name="language" id="language-select">
-            <option value="en">ENG</option>
-            <option value="nl">NL</option>
-            <option value="fr">FR</option>
-          </select>
-        </li>
-      </ul>
-    </nav>
+    <svg style="display: none">
+      <symbol id="navicon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M21 11h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+        <path d="M3 7h18c0.6 0 1-0.4 1-1s-0.4-1-1-1h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1z"></path>
+        <path d="M21 17h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+      </symbol>
+      <symbol id="close" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.1,17.7L6.3,4.9c-.4-.4-1-.4-1.4,0s-.4,1,0,1.4l12.7,12.7c.4.4,1,.4,1.4,0s.4-1,0-1.4Z"></path>
+        <path d="M6.3,19.1l12.7-12.7c.4-.4.4-1,0-1.4s-1-.4-1.4,0l-12.7,12.7c-.4.4-.4,1,0,1.4s1,.4,1.4,0Z"></path>
+      </symbol>
+    </svg>
 
+    <header>
+      <nav class="nav">
+        <button class="nav__button nav__button--hamburger" aria-expanded="false">
+          <svg class="nav__icon nav__icon--hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path d="M3 12h18m-18-6h18m-18 12h18" stroke="#F1F1F1" stroke-width="2"  />
+          </svg>
+        </button>
+        <button class="nav__button nav__button--close hidden" aria-expanded="true">
+          <svg class="nav__icon nav__icon--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path d="M18 6L6 18M6 6l12 12" stroke="#F1F1F1" stroke-width="2" />
+          </svg>
+        </button>
+        <ul class="nav__list hidden" id="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about-plantin">Christophe Plantin</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about-identity">Visual Identity</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about-strategies">Marketing Strategies</a></li>
+          <li>
+            <select name="language" id="language-select">
+              <option value="en">ENG</option>
+              <option value="nl">NL</option>
+              <option value="fr">FR</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-
+  <main>
     <article class="white_article">
-
     <div class="hero-part">
-      <picture>
+      <picture class="logo-menu">
         <img sizes="(max-width: 293px) 100vw, 293px" srcset="
-      /src/assets/logo-menu_g24hzx_c_scale,w_50.png 50w,
-      /src/assets/logo-menu_g24hzx_c_scale,w_293.png 293w" src="logo-menu_g24hzx_c_scale,w_293.png" alt="">
+      /src/assets/logo-menu_q3sz4q_c_scale,w_50.avif 50w,
+      /src/assets/logo-menu_q3sz4q_c_scale,w_293.avif 293w" src="logo-menu_q3sz4q_c_scale,w_293.avif" alt="">
       </picture>
       <p>Christophe Plantin</p>
       <h1>The Marketing Genius in Printing World</h1>
@@ -44,10 +68,10 @@
       <p class="bubble-side-text">CHRISTOPHE PLANTIN</p>
       <picture class="plantin-bubble">
         <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
-      /src/assets/plantin-bubble_vcfxgh_c_scale,w_200.png 200w,
-      /src/assets/plantin-bubble_vcfxgh_c_scale,w_656.png 656w,
-      /src/assets/plantin-bubble_vcfxgh_c_scale,w_1080.png 1080w" src="plantin-bubble_vcfxgh_c_scale,w_1080.png" alt="">
-        </picture>
+      /src/assets/plantin-bubble_esg0ht_c_scale,w_100.avif 100w,
+      /src/assets/plantin-bubble_esg0ht_c_scale,w_693.avif 693w,
+      /src/assets/plantin-bubble_esg0ht_c_scale,w_1080.avif 1080w" src="plantin-bubble_esg0ht_c_scale,w_1080.avif" alt="">
+      </picture>
       <div class="plantin-line brown-bubble-line"></div>
       <p class="bubble-side-text">CHRISTOPHE PLANTIN</p>
     </div>
@@ -71,20 +95,21 @@
       <div class="storyline-images">
         <picture class="bookbinder">
           <img sizes="(max-width: 553px) 100vw, 553px" srcset="
-        /src/assets/bookbinder_mondzk_c_scale,w_200.png 200w,
-        /src/assets/bookbinder_mondzk_c_scale,w_553.png 553w" src="bookbinder_mondzk_c_scale,w_553.png" alt="">
+        /src/assets/bookbinder_q03o0n_c_scale,w_100.avif 100w,
+        /src/assets/bookbinder_q03o0n_c_scale,w_299.avif 299w,
+        /src/assets/bookbinder_q03o0n_c_scale,w_553.avif 553w" src="bookbinder_q03o0n_c_scale,w_553.avif" alt="">
         </picture>
         <picture class="antwerp">
-          <img sizes="(max-width: 730px) 100vw, 730px" srcset="
-        /src/assets/antwerp_qaysdt_c_scale,w_200.png 200w,
-        /src/assets/antwerp_qaysdt_c_scale,w_519.png 519w,
-        /src/assets/antwerp_qaysdt_c_scale,w_730.png 730w" src="antwerp_qaysdt_c_scale,w_730.png" alt="">
+          <img sizes="(max-width: 930px) 100vw, 930px" srcset="
+        /src/assets/antwerp_enb6e3_c_scale,w_100.avif 100w,
+        /src/assets/antwerp_enb6e3_c_scale,w_623.avif 623w,
+        /src/assets/antwerp_enb6e3_c_scale,w_930.avif 930w" src="antwerp_enb6e3_c_scale,w_930.avif" alt="">
         </picture>
         <picture class="plantinpress">
           <img sizes="(max-width: 924px) 100vw, 924px" srcset="
-        /src/assets/plantinpress_fpzurj_c_scale,w_200.png 200w,
-        /src/assets/plantinpress_fpzurj_c_scale,w_526.png 526w,
-        /src/assets/plantinpress_fpzurj_c_scale,w_924.png 924w" src="plantinpress_fpzurj_c_scale,w_924.png" alt="">
+        /src/assets/plantinpress_nufgic_c_scale,w_100.avif 100w,
+        /src/assets/plantinpress_nufgic_c_scale,w_622.avif 622w,
+        /src/assets/plantinpress_nufgic_c_scale,w_924.avif 924w" src="plantinpress_nufgic_c_scale,w_924.avif" alt="">
         </picture>
       </div>
     </section>
@@ -101,10 +126,10 @@
       <p>Rather than just meeting demand, Plantin anticipated it, tapping into the desire for books that reflected sophistication
       and intellect.</p>
       <picture class="genius-frame">
-        <img sizes="(max-width: 1055px) 100vw, 1055px" srcset="
-      /src/assets/genius-frame_w1kbs7_c_scale,w_200.png 200w,
-      /src/assets/genius-frame_w1kbs7_c_scale,w_706.png 706w,
-      /src/assets/genius-frame_w1kbs7_c_scale,w_1055.png 1055w" src="genius-frame_w1kbs7_c_scale,w_1055.png" alt="">
+        <img sizes="(max-width: 930px) 100vw, 930px" srcset="
+      /src/assets/genius-frame_tmsxts_c_scale,w_100.avif 100w,
+      /src/assets/genius-frame_tmsxts_c_scale,w_621.avif 621w,
+      /src/assets/genius-frame_tmsxts_c_scale,w_930.avif 930w" src="genius-frame_tmsxts_c_scale,w_930.avif" alt="">
       </picture>
       <p>It was this ability to <strong>spot, seize, and capitalize on opportunities</strong> that transformed Plantin's printing press into a
       respected brand. His success came not from a formal strategy, but from his natural ability to spot what people wanted,
@@ -117,9 +142,9 @@
       <p class="bubble-side-text">LOGO & BRANDING</p>
       <picture class="identity-bubble">
         <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
-      /src/assets/identity-bubble_mqqs1j_c_scale,w_200.png 200w,
-      /src/assets/identity-bubble_mqqs1j_c_scale,w_735.png 735w,
-      /src/assets/identity-bubble_mqqs1j_c_scale,w_1080.png 1080w" src="identity-bubble_mqqs1j_c_scale,w_1080.png" alt="">
+      /src/assets/identity-bubble_finh65_c_scale,w_100.avif 100w,
+      /src/assets/identity-bubble_finh65_c_scale,w_681.avif 681w,
+      /src/assets/identity-bubble_finh65_c_scale,w_1080.avif 1080w" src="identity-bubble_finh65_c_scale,w_1080.avif" alt="">
       </picture>
       <div class="identity-line brown-bubble-line"></div>
       <p class="bubble-side-text">LOGO & BRANDING</p>
@@ -143,40 +168,40 @@
       <p>Can you guess which tool symbolised Plantin's precision and craftsmanship and became his iconic logo?</p>
       <picture class="logo-frame">
         <img sizes="(max-width: 359px) 100vw, 359px" srcset="
-      /src/assets/logo-frame_igqq5z_c_scale,w_200.png 200w,
-      /src/assets/logo-frame_igqq5z_c_scale,w_288.png 288w,
-      /src/assets/logo-frame_igqq5z_c_scale,w_359.png 359w" src="logo-frame_igqq5z_c_scale,w_359.png" alt="">
+      /src/assets/logo-frame_rqnney_c_scale,w_100.avif 100w,
+      /src/assets/logo-frame_rqnney_c_scale,w_224.avif 224w,
+      /src/assets/logo-frame_rqnney_c_scale,w_359.avif 359w" src="logo-frame_rqnney_c_scale,w_359.avif" alt="">
       </picture>
       <picture class="logo">
         <img sizes="(max-width: 614px) 100vw, 614px" srcset="
-      /src/assets/logo-plantin_nfxpb6_c_scale,w_200.png 200w,
-      /src/assets/logo-plantin_nfxpb6_c_scale,w_432.png 432w,
-      /src/assets/logo-plantin_nfxpb6_c_scale,w_614.png 614w" src="logo-plantin_nfxpb6_c_scale,w_614.png" alt="">
+      /src/assets/logo-plantin_nfrwzf_c_scale,w_100.avif 100w,
+      /src/assets/logo-plantin_nfrwzf_c_scale,w_412.avif 412w,
+      /src/assets/logo-plantin_nfrwzf_c_scale,w_614.avif 614w" src="logo-plantin_nfrwzf_c_scale,w_614.avif" alt="">
       </picture>
       <div>
         <div class="meter-circle"></div>
         <picture class="meter">
-          <img sizes="(max-width: 680px) 100vw, 680px" srcset="
-        /src/assets/meter_owxopw_c_scale,w_50.png 50w,
-        /src/assets/meter_owxopw_c_scale,w_680.png 680w" src="meter_owxopw_c_scale,w_680.png" alt="">
+          <img sizes="(max-width: 600px) 100vw, 600px" srcset="
+        /src/assets/meter_vs8qtr_c_scale,w_50.avif 50w,
+        /src/assets/meter_vs8qtr_c_scale,w_600.avif 600w" src="meter_vs8qtr_c_scale,w_600.avif" alt="">
         </picture>
       </div>
       <div>
         <div class="compases-circle"></div>
         <picture class="compasessmall">
-          <img sizes="(max-width: 618px) 100vw, 618px" srcset="
-        /src/assets/compasessmall_h9ottb_c_scale,w_50.png 50w,
-        /src/assets/compasessmall_h9ottb_c_scale,w_480.png 480w,
-        /src/assets/compasessmall_h9ottb_c_scale,w_618.png 618w" src="compasessmall_h9ottb_c_scale,w_618.png" alt="">
+          <img sizes="(max-width: 600px) 100vw, 600px" srcset="
+        /src/assets/compasessmall_xw6jmr_c_scale,w_50.avif 50w,
+        /src/assets/compasessmall_xw6jmr_c_scale,w_486.avif 486w,
+        /src/assets/compasessmall_xw6jmr_c_scale,w_600.avif 600w" src="compasessmall_xw6jmr_c_scale,w_600.avif" alt="">
         </picture>
       </div>
       <div>
         <div class="sharpener-circle"></div>
         <picture class="sharpener">
-          <img sizes="(max-width: 680px) 100vw, 680px" srcset="
-        /src/assets/sharpener_azf6lj_c_scale,w_50.png 50w,
-        /src/assets/sharpener_azf6lj_c_scale,w_453.png 453w,
-        /src/assets/sharpener_azf6lj_c_scale,w_680.png 680w" src="sharpener_azf6lj_c_scale,w_680.png" alt="">
+          <img sizes="(max-width: 600px) 100vw, 600px" srcset="
+        /src/assets/sharpener_bjgqsd_c_scale,w_50.avif 50w,
+        /src/assets/sharpener_bjgqsd_c_scale,w_449.avif 449w,
+        /src/assets/sharpener_bjgqsd_c_scale,w_600.avif 600w" src="sharpener_bjgqsd_c_scale,w_600.avif" alt="">
         </picture>
       </div>
       <div class="guess-logo-line"></div>
@@ -189,10 +214,10 @@
         <p>LOGO</p>
         <h3>The Golden Compasses Logo</h3>
         <picture class="logo-one">
-          <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
-        /src/assets/logo-one_kgz1im_c_scale,w_200.png 200w,
-        /src/assets/logo-one_kgz1im_c_scale,w_740.png 740w,
-        /src/assets/logo-one_kgz1im_c_scale,w_1080.png 1080w" src="logo-one_kgz1im_c_scale,w_1080.png" alt="">
+          <img sizes="(max-width: 960px) 100vw, 960px" srcset="
+        /src/assets/logo-one_lodu2h_c_scale,w_100.avif 100w,
+        /src/assets/logo-one_lodu2h_c_scale,w_639.avif 639w,
+        /src/assets/logo-one_lodu2h_c_scale,w_960.avif 960w" src="logo-one_lodu2h_c_scale,w_960.avif" alt="">
         </picture>
         <h6>Strategic Choice</h6>
         <p>Plantin's Golden Compasses logo symbolized his <strong>meticulous work and intellectual rigor</strong>, reflecting the high standards of
@@ -211,9 +236,10 @@
           typeface, and illustration</strong>, making them visually distinct.</p>
         </div>
         <picture class="book-collection">
-          <img sizes="(max-width: 1019px) 100vw, 1019px" srcset="
-        /src/assets/book-collection_h46067_c_scale,w_200.png 200w,
-        /src/assets/book-collection_h46067_c_scale,w_1019.png 1019w" src="book-collection_h46067_c_scale,w_1019.png" alt="">
+          <img sizes="(max-width: 960px) 100vw, 960px" srcset="
+        /src/assets/book-collection_p5af4t_c_scale,w_100.avif 100w,
+        /src/assets/book-collection_p5af4t_c_scale,w_639.avif 639w,
+        /src/assets/book-collection_p5af4t_c_scale,w_960.avif 960w" src="book-collection_p5af4t_c_scale,w_960.avif" alt="">
         </picture>
         <div>
           <h6>Uniform Style</h6>
@@ -227,9 +253,9 @@
       <p class="bubble-side-text">marketing strategies</p>
       <picture class="strategies-bubble">
         <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
-      /src/assets/strategies-bubble_yonlfd_c_scale,w_200.png 200w,
-      /src/assets/strategies-bubble_yonlfd_c_scale,w_714.png 714w,
-      /src/assets/strategies-bubble_yonlfd_c_scale,w_1080.png 1080w" src="strategies-bubble_yonlfd_c_scale,w_1080.png" alt="">
+      /src/assets/strategies-bubble_rbhham_c_scale,w_100.avif 100w,
+      /src/assets/strategies-bubble_rbhham_c_scale,w_811.avif 811w,
+      /src/assets/strategies-bubble_rbhham_c_scale,w_1080.avif 1080w" src="strategies-bubble_rbhham_c_scale,w_1080.avif" alt="">
       </picture>
       <div class="marketing-line brown-bubble-line"></div>
       <p class="bubble-side-text">marketing strategies</p>
@@ -250,9 +276,9 @@
         <p>marketing</p>
         <picture class="graph">
           <img sizes="(max-width: 800px) 100vw, 800px" srcset="
-        /src/assets/graph_hsynci_c_scale,w_100.png 100w,
-        /src/assets/graph_hsynci_c_scale,w_534.png 534w,
-        /src/assets/graph_hsynci_c_scale,w_800.png 800w" src="graph_hsynci_c_scale,w_800.png" alt="">
+        /src/assets/graph_vtekja_c_scale,w_100.avif 100w,
+        /src/assets/graph_vtekja_c_scale,w_528.avif 528w,
+        /src/assets/graph_vtekja_c_scale,w_800.avif 800w" src="graph_vtekja_c_scale,w_800.avif" alt="">
         </picture>
         <p>marketing</p>
       </div>
@@ -269,9 +295,9 @@
       <div>
         <picture class="social-status">
           <img sizes="(max-width: 442px) 100vw, 442px" srcset="
-        /src/assets/social-status_tgfner_c_scale,w_100.png 100w,
-        /src/assets/social-status_tgfner_c_scale,w_301.png 301w,
-        /src/assets/social-status_tgfner_c_scale,w_442.png 442w" src="social-status_tgfner_c_scale,w_442.png" alt="">
+        /src/assets/social-status_oupkwr_c_scale,w_50.avif 50w,
+        /src/assets/social-status_oupkwr_c_scale,w_355.avif 355w,
+        /src/assets/social-status_oupkwr_c_scale,w_442.avif 442w" src="social-status_oupkwr_c_scale,w_442.avif" alt="">
         </picture>
         <div class="social-status-line white-strategy-line"></div>
       </div>
@@ -301,21 +327,21 @@
           <p>Ornate Typafaces</p>
           <picture class="map">
             <img sizes="(max-width: 1000px) 100vw, 1000px" srcset="
-          /src/assets/map_ojufge_c_scale,w_100.png 100w,
-          /src/assets/map_ojufge_c_scale,w_670.png 670w,
-          /src/assets/map_ojufge_c_scale,w_1000.png 1000w" src="map_ojufge_c_scale,w_1000.png" alt="">
+          /src/assets/map_llxwrn_c_scale,w_50.avif 50w,
+          /src/assets/map_llxwrn_c_scale,w_660.avif 660w,
+          /src/assets/map_llxwrn_c_scale,w_1000.avif 1000w" src="map_llxwrn_c_scale,w_1000.avif" alt="">
           </picture>
           <picture class="ornate">
             <img sizes="(max-width: 560px) 100vw, 560px" srcset="
-          /src/assets/ornate_crqzfh_c_scale,w_100.png 100w,
-          /src/assets/ornate_crqzfh_c_scale,w_372.png 372w,
-          /src/assets/ornate_crqzfh_c_scale,w_560.png 560w" src="ornate_crqzfh_c_scale,w_560.png" alt="">
+          /src/assets/ornate_t5hist_c_scale,w_50.avif 50w,
+          /src/assets/ornate_t5hist_c_scale,w_314.avif 314w,
+          /src/assets/ornate_t5hist_c_scale,w_560.avif 560w" src="ornate_t5hist_c_scale,w_560.avif" alt="">
           </picture>
           <picture class="snake">
             <img sizes="(max-width: 625px) 100vw, 625px" srcset="
-          /src/assets/snake_hqroxu_c_scale,w_100.png 100w,
-          /src/assets/snake_hqroxu_c_scale,w_413.png 413w,
-          /src/assets/snake_hqroxu_c_scale,w_625.png 625w" src="snake_hqroxu_c_scale,w_625.png" alt="">
+          /src/assets/snake_plxte2_c_scale,w_50.avif 50w,
+          /src/assets/snake_plxte2_c_scale,w_373.avif 373w,
+          /src/assets/snake_plxte2_c_scale,w_625.avif 625w" src="snake_plxte2_c_scale,w_625.avif" alt="">
           </picture>
           <p>Vibrant, Hand-coloured Maps</p>
           <p>Intricate Woodcut Illustrations</p>
@@ -353,9 +379,9 @@
       <div>
         <picture class="audiences">
           <img sizes="(max-width: 441px) 100vw, 441px" srcset="
-        /src/assets/audiences_t13wih_c_scale,w_100.png 100w,
-        /src/assets/audiences_t13wih_c_scale,w_320.png 320w,
-        /src/assets/audiences_t13wih_c_scale,w_441.png 441w" src="audiences_t13wih_c_scale,w_441.png" alt="">
+        /src/assets/audiences_p91deb_c_scale,w_50.avif 50w,
+        /src/assets/audiences_p91deb_c_scale,w_407.avif 407w,
+        /src/assets/audiences_p91deb_c_scale,w_441.avif 441w" src="audiences_p91deb_c_scale,w_441.avif" alt="">
         </picture>
         <div class="audiences-line white-strategy-line"></div>
       </div>
@@ -383,9 +409,9 @@
           accommodating the complex needs of different religious communities.</p>
           <picture class="maria">
             <img sizes="(max-width: 558px) 100vw, 558px" srcset="
-          /src/assets/maria_jons87_c_scale,w_100.png 100w,
-          /src/assets/maria_jons87_c_scale,w_329.png 329w,
-          /src/assets/maria_jons87_c_scale,w_558.png 558w" src="maria_jons87_c_scale,w_558.png" alt="">
+          /src/assets/maria_gvwdjl_c_scale,w_50.avif 50w,
+          /src/assets/maria_gvwdjl_c_scale,w_358.avif 358w,
+          /src/assets/maria_gvwdjl_c_scale,w_558.avif 558w" src="maria_gvwdjl_c_scale,w_558.avif" alt="">
           </picture>
         </div>
         <div class="scholars">
@@ -396,10 +422,10 @@
           works attracted the growing community of scholars and thinkers of the Renaissance. Whether it was Aristotle, Galen, or
           the works of early scientists, Plantin's press offered intellectual prestige wrapped in beautifully crafted volumes.</p>
           <picture class="scholargraph">
-            <img sizes="(max-width: 909px) 100vw, 909px" srcset="
-          /src/assets/scholargraph_icbcru_c_scale,w_100.png 100w,
-          /src/assets/scholargraph_icbcru_c_scale,w_529.png 529w,
-          /src/assets/scholargraph_icbcru_c_scale,w_909.png 909w" src="scholargraph_icbcru_c_scale,w_909.png" alt="">
+            <img sizes="(max-width: 760px) 100vw, 760px" srcset="
+          /src/assets/scholargraph_swacvw_c_scale,w_50.avif 50w,
+          /src/assets/scholargraph_swacvw_c_scale,w_442.avif 442w,
+          /src/assets/scholargraph_swacvw_c_scale,w_760.avif 760w" src="scholargraph_swacvw_c_scale,w_760.avif" alt="">
           </picture>
         </div>
         <div class="middle-class">
@@ -411,10 +437,10 @@
           <p>These were books that appealed to the newly educated but weren't reserved for the elite. These offerings contrasted
           sharply with his luxury editions, showcasing his ability to balance high-end craftsmanship with mass-market appeal.</p>
           <picture class="middleclass">
-            <img sizes="(max-width: 922px) 100vw, 922px" srcset="
-          /src/assets/middleclass_pwcsl9_c_scale,w_100.png 100w,
-          /src/assets/middleclass_pwcsl9_c_scale,w_545.png 545w,
-          /src/assets/middleclass_pwcsl9_c_scale,w_922.png 922w" src="middleclass_pwcsl9_c_scale,w_922.png" alt="">
+            <img sizes="(max-width: 760px) 100vw, 760px" srcset="
+          /src/assets/middleclass_x2dsxt_c_scale,w_50.avif 50w,
+          /src/assets/middleclass_x2dsxt_c_scale,w_457.avif 457w,
+          /src/assets/middleclass_x2dsxt_c_scale,w_760.avif 760w" src="middleclass_x2dsxt_c_scale,w_760.avif" alt="">
           </picture>
         </div>
       </section>
@@ -422,9 +448,8 @@
       <div>
         <picture class="proofreaders">
           <img sizes="(max-width: 440px) 100vw, 440px" srcset="
-        /src/assets/proofreaders_raaggc_c_scale,w_100.png 100w,
-        /src/assets/proofreaders_raaggc_c_scale,w_337.png 337w,
-        /src/assets/proofreaders_raaggc_c_scale,w_440.png 440w" src="proofreaders_raaggc_c_scale,w_440.png" alt="">
+        /src/assets/proofreaders_vrnteh_c_scale,w_50.avif 50w,
+        /src/assets/proofreaders_vrnteh_c_scale,w_440.avif 440w" src="proofreaders_vrnteh_c_scale,w_440.avif" alt="">
         </picture>
         <div class="proofreaders-line white-strategy-line"></div>
       </div>
@@ -464,24 +489,24 @@
         <button class="solution-button">Check Solution</button>
         <picture class="proofreader-left">
           <img sizes="(max-width: 463px) 100vw, 463px" srcset="
-        /src/assets/proofreader-guy_dsived_c_scale,w_100.png 100w,
-        /src/assets/proofreader-guy_dsived_c_scale,w_292.png 292w,
-        /src/assets/proofreader-guy_dsived_c_scale,w_463.png 463w" src="proofreader-guy_dsived_c_scale,w_463.png" alt="">
+        /src/assets/proofreader-guy_kxhkjo_c_scale,w_50.avif 50w,
+        /src/assets/proofreader-guy_kxhkjo_c_scale,w_306.avif 306w,
+        /src/assets/proofreader-guy_kxhkjo_c_scale,w_463.avif 463w" src="proofreader-guy_kxhkjo_c_scale,w_463.avif" alt="">
         </picture>
         <picture class="proofreader-right">
           <img sizes="(max-width: 463px) 100vw, 463px" srcset="
-        /src/assets/proofreader-guy_dsived_c_scale,w_100.png 100w,
-        /src/assets/proofreader-guy_dsived_c_scale,w_292.png 292w,
-        /src/assets/proofreader-guy_dsived_c_scale,w_463.png 463w" src="proofreader-guy_dsived_c_scale,w_463.png" alt="">
+        /src/assets/proofreader-guy_kxhkjo_c_scale,w_50.avif 50w,
+        /src/assets/proofreader-guy_kxhkjo_c_scale,w_306.avif 306w,
+        /src/assets/proofreader-guy_kxhkjo_c_scale,w_463.avif 463w" src="proofreader-guy_kxhkjo_c_scale,w_463.avif" alt="">
         </picture>
       </section>
 
       <div>
         <picture class="collectors">
           <img sizes="(max-width: 440px) 100vw, 440px" srcset="
-        /src/assets/collectors_wvzhxd_c_scale,w_100.png 100w,
-        /src/assets/collectors_wvzhxd_c_scale,w_311.png 311w,
-        /src/assets/collectors_wvzhxd_c_scale,w_440.png 440w" src="collectors_wvzhxd_c_scale,w_440.png" alt="">
+        /src/assets/collectors_wanzwl_c_scale,w_50.avif 50w,
+        /src/assets/collectors_wanzwl_c_scale,w_367.avif 367w,
+        /src/assets/collectors_wanzwl_c_scale,w_440.avif 440w" src="collectors_wanzwl_c_scale,w_440.avif" alt="">
         </picture>
         <div class="collectors-line white-strategy-line"></div>
       </div>
@@ -500,8 +525,8 @@
       <div>
         <picture class="ultimate">
           <img sizes="(max-width: 440px) 100vw, 440px" srcset="
-        /src/assets/ultimate_zxsuvn_c_scale,w_100.png 100w,
-        /src/assets/ultimate_zxsuvn_c_scale,w_440.png 440w" src="ultimate_zxsuvn_c_scale,w_440.png" alt="">
+        /src/assets/ultimate_zsh1w9_c_scale,w_100.avif 100w,
+        /src/assets/ultimate_zsh1w9_c_scale,w_440.avif 440w" src="ultimate_zsh1w9_c_scale,w_440.avif" alt="">
         </picture>
         <div class="ultimate-line white-strategy-line"></div>
       </div>
@@ -520,8 +545,8 @@
       <section class="section-stories">
         <picture class="storybook">
           <img sizes="(max-width: 203px) 100vw, 203px" srcset="
-        /src/assets/storybook_ac8jse_c_scale,w_200.png 200w,
-        /src/assets/storybook_ac8jse_c_scale,w_203.png 203w" src="storybook_ac8jse_c_scale,w_203.png" alt="">
+        /src/assets/storybook_azysqt_c_scale,w_100.avif 100w,
+        /src/assets/storybook_azysqt_c_scale,w_203.avif 203w" src="storybook_azysqt_c_scale,w_203.avif" alt="">
         </picture>
         <h3>More exciting Stories</h3>
         <p>Want to dive deeper into the fascinating stories of Christophe Plantin and his legacy? Explore more tales from his life,
@@ -530,6 +555,7 @@
       </section>
 
     </article>
+  </main>
 
 
 
@@ -566,11 +592,6 @@
             <li>
               <a href="https://www.youtube.com/user/PlantinMoretusmuseum" aria-label="YouTube">
                 <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tripadvisor.com/Attraction_Review-g188636-d242684-Reviews-Museum_Plantin_Moretus-Antwerp_Antwerp_Province.html" aria-label="Tripadvisor">
-                <i class="fab fa-tripadvisor"></i>
               </a>
             </li>
           </ul>
