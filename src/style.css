@@ -101,12 +101,44 @@ button:focus-visible {
   width: 45rem;
   font-family: psfournier-std, sans-serif;
   font-weight: 400;
+  transition: height 0.3s ease;
+  overflow: hidden;
 }
 
 .fa-lightbulb {
   color: goldenrod;
   /* font-size: 24px; */
 }
+
+/* .proofreader-container {
+  position: relative;
+  width: 600px;
+  margin: 20px auto;
+} */
+
+.proofreader-rectangle:focus {
+  background-color: rgb(190, 190, 190);
+  color: #1a1a1a;
+}
+
+.solution {
+  background-color: #3350E9;
+  border: 2px solid #ccc;
+  width: 45rem;
+  padding: 4rem;
+  font-family: psfournier-std, sans-serif;
+  font-weight: 400;
+}
+
+.solution.hidden {
+  display: none;
+}
+
+.solution.visible {
+  display: block;
+}
+
+
 
 .footer-social ul {
   display: flex;
