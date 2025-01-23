@@ -392,8 +392,11 @@ button:focus-visible {
 
   /* HERO SECTION */
   .hero-image {
+<<<<<<< HEAD
 /* HERO SECTION */
   .hero-image{
+=======
+>>>>>>> 6c5464b (test hero)
     background-image: url('./assets/hero-mobile.png');
     background-position: center center;
     background-size: cover;
