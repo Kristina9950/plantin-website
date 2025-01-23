@@ -353,9 +353,18 @@ button:focus-visible {
   .dashed-circle {
     display: inline-block;
     width: 6rem;
+<<<<<<< HEAD
     height: 6rem;
     border: 2px dashed var(--c-brown1);
     border-radius: 50%;
+=======
+    /* Size of the circle */
+    height: 6rem;
+    border: 2px dashed var(--c-brown1);
+    /* Dashed border color */
+    border-radius: 50%;
+    /* Make it a circle */
+>>>>>>> 3b9d12d (test image)
     position: relative;
     cursor: pointer;
     top: 11.5rem;
