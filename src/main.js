@@ -1,4 +1,6 @@
+import './reset.css';
 import './style.css';
+
 
 // Solution functionality
 const solutionButton = document.querySelector('.solution-button');
