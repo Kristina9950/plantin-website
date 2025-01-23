@@ -26,8 +26,8 @@ img {
 
 article {
   margin: 0;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   width: 100vw;
 }
 
@@ -261,6 +261,7 @@ button:focus-visible {
     font-weight: 200;
     font-style: italic;
     font-size: var(--s16);
+    line-height: 1.2rem;
   }
   
   h3 {
@@ -269,6 +270,7 @@ button:focus-visible {
     font-style: normal;
     font-size: var(--s24);
     text-transform: uppercase;
+    line-height: 1.6rem;
     }
   
   h4 {
@@ -293,6 +295,10 @@ button:focus-visible {
     font-style: normal;
     font-size: var(--s18);
     text-transform: uppercase;
+    }
+
+    strong{
+      font-weight: 500;
     }
 
   .strategy_name{
@@ -499,37 +505,126 @@ button:focus-visible {
     align-items: center;
   }
 
-
-  /* .plantin-bubble{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+/* SECTION ABOUT PLANTIN */
+  .about-plantin-intro-titles{
+    text-align: center;
   }
+
+  .about-plantin-title{
+    margin-top: -0.5rem;
+  }
+
+  /* .plantin-story-line {
+    position: relative;
+    width: 100vw;
+    border-top: 1px solid var(--c-grey1);
+    margin-left: calc(-20%);
+    margin-top: 3rem;
+  }
+
+  .story-line-bookbinder, 
+  .story-line-press,
+  .story-line-antwerp{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--c-blue2);
+    border-radius: 50%;
+  }
+
+  .story-line-press:hover, 
+  .story-line-bookbinder:hover,
+  .story-line-antwerp:hover{
+    background-color: var(--c-blue2);
+  }
+
+    .plantin-storyline-container {
+      position: relative;
+      width: 100%;
+    }
+  
+    .story-bubbles {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 1rem;
+    } */
     
-  .plantin-line {
-    border-left: 2px dashed var(--c-brown1);
-    height: 22rem;
+
+  .plantin-storyline-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .plantin-story-line {
+    position: relative;
+    width: 90vw;
+    border-top: 1px solid var(--c-grey1);
+    margin-left: calc(-20%);
+    margin-top: 3rem;
+  }
+
+  .story-bubbles {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+  }
+
+  .story-bubble {
+    text-align: center;
+    position: relative;
+  }
+
+  .bubble {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--c-blue2);
+    background-color: var(--c-blue-white);
     position: absolute;
     left: 50%;
-    transform: translateY(-80%);
+    transform: translateX(-50%);
   }
 
-.plantin-bubble-left {
-  position: absolute;
-  left: 0;
-  transform: translateY(-50%) rotate(-90deg);
-}
+  .bubble:hover{
+    background-color: var(--c-blue2);
+  }
 
-.plantin-bubble-right {
-  position: absolute;
-  right: 0;
-  transform: translateY(-50%) rotate(90deg);
-} */
+  .story-bubble p {
+    margin-top: 2.5rem;
+    color: var(--c-blue2);
+    font-size: var(--s16);
+  }
 
 
 
+
+  
+  .story-line-bookbinder {}
+
+  .storyline-bookbinder{}
+
+  .story-line-antwerp{}
+
+  .storyline-antwerp{}
+
+  .story-line-press{}
+
+  .storyline-press{}
+
+  .storyline-images{
+    background-image: url('src/assets/storyline-frame.png');
+    background-position: left bottom;
+    /* background-size: auto, cover; */
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  
 /* PROOFREADER QUEST */
     .proofreader-rectangle {
       border: 2px solid #3003f8;
@@ -555,16 +650,6 @@ button:focus-visible {
       font-family: psfournier-std, sans-serif;
       font-weight: 400;
     }
-}
-
-
-.section-about-plantin{
-  background-image: url('src/assets/storyline-frame.png');
-  background-position: left bottom;
-  /* background-size: auto, cover; */
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
 }
 
 .section-ss-intro{
