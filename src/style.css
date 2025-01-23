@@ -335,63 +335,9 @@ button:focus-visible {
     margin-left: auto;
   }
 
-  .nav__button--close {
-    display: none;
-  }
-
-  .nav__button--close.visible {
-    display: block;
-  }
-
-  .nav__button--hamburger {
-    display: block;
-  }
-
-  .nav__button--hamburger.hidden {
-    display: none;
-  }
-
-  .nav__list {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--c-brown1);
-    position: absolute;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    z-index: 1;
-  }
-
-  .nav__list.hidden {
-    display: none;
-  }
-
-  .nav__list.visible {
-    display: flex;
-    flex-direction: column;
-  }
-
-  header {
-    position: relative;
-  }
-
-  .logo-menu {
-    position: absolute;
-    top: 50%;
-    left: -5%;
-    transform: translateY(-50%);
-    z-index: 2;
-  }
-
-  .logo-menu img {
-    max-width: var(--s96);
-    height: auto;
-  }
-
-  /* HERO SECTION */
-  .hero-image {
-    background-image: url('./assets/hero-mobile.png');
+/* HERO SECTION */
+  .hero-image{
+    background-image: url('./src/assets/hero-mobile.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -607,8 +553,8 @@ button:focus-visible {
     font-size: var(--s16);
   }
 
-  .storyline-images {
-    background-image: url('src/assets/storyline-frame.png');
+  .storyline-images{
+    background-image: url('./src/assets/storyline-frame.png');
     background-position: left bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -651,8 +597,8 @@ button:focus-visible {
   }
 }
 
-.section-ss-intro {
-  background-image: url('src/assets/ss-intro-image.png');
+.section-ss-intro{
+  background-image: url('./src/assets/ss-intro-image.png');
   background-position: left bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat;
@@ -660,8 +606,8 @@ button:focus-visible {
   height: 100px;
 }
 
-.bible-hover {
-  background-image: url('src/assets/bible.png');
+.bible-hover{
+  background-image: url('./src/assets/bible.png');
   background-position: left bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat;
@@ -669,8 +615,8 @@ button:focus-visible {
   height: 100px;
 }
 
-.bible-languages {
-  background-image: url('src/assets/languageglobe.png');
+.bible-languages{
+  background-image: url('./src/assets/languageglobe.png');
   background-position: left bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat;
@@ -678,8 +624,8 @@ button:focus-visible {
   height: 100px;
 }
 
-.section-a-intro {
-  background-image: url('src/assets/target-left.png'), url('src/assets/target-right.png');
+.section-a-intro{
+  background-image: url('./src/assets/target-left.png'), url('./src/assets/target-right.png') ;
   background-position: left bottom, right bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat, no-repeat;
@@ -687,8 +633,8 @@ button:focus-visible {
   height: 100px, 100px;
 }
 
-.religious-communities {
-  background-image: url('src/assets/religion-frame.png'), url('src/assets/religion-paper.png');
+.religious-communities{
+  background-image: url('./src/assets/religion-frame.png'), url('./src/assets/religion-paper.png') ;
   background-position: left bottom, right bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat, no-repeat;
@@ -696,8 +642,8 @@ button:focus-visible {
   height: 100px, 100px;
 }
 
-.scholars {
-  background-image: url('src/assets/scholars-frame.png'), url('src/assets/scholars-paper.png');
+.scholars{
+  background-image: url('./src/assets/scholars-frame.png'), url('./src/assets/scholars-paper.png') ;
   background-position: left bottom, right bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat, no-repeat;
@@ -705,8 +651,8 @@ button:focus-visible {
   height: 100px, 100px;
 }
 
-.middle-class {
-  background-image: url('src/assets/middleclass-frame.png'), url('src/assets/middleclass-paper.png');
+.middle-class{
+  background-image: url('./src/assets/middleclass-frame.png'), url('./src/assets/middleclass-paper.png') ;
   background-position: left bottom, right bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat, no-repeat;
@@ -714,8 +660,8 @@ button:focus-visible {
   height: 100px, 100px;
 }
 
-.section-p-intro {
-  background-image: url('./src/assets/daughters-left.png'), url('./src/assets/daughters-right.png');
+.section-p-intro{
+  background-image: url('./src/assets/daughters-left.png'), url('./src/assets/daughters-right.png') ;
   background-position: left bottom, right bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat, no-repeat;
@@ -723,8 +669,8 @@ button:focus-visible {
   height: 100px, 100px;
 }
 
-.section-c {
-  background-image: url('src/assets/handleft.png'), url('src/assets/handright.png'), url('src/assets/handfight.png');
+.section-c{
+  background-image: url('./src/assets/handleft.png'), url('./src/assets/handright.png'),url('./src/assets/handfight.png') ;
   background-position: left bottom, right bottom, right bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -732,8 +678,8 @@ button:focus-visible {
   height: 100px, 100px, 100px;
 }
 
-.section-u {
-  background-image: url('src/assets/fireleft.png'), url('src/assets/fireright.png');
+.section-u{
+  background-image: url('./src/assets/fireleft.png'), url('./src/assets/fireright.png') ;
   background-position: left bottom, right bottom;
   /* background-size: auto, cover; */
   background-repeat: no-repeat, no-repeat;
@@ -777,7 +723,7 @@ button:focus-visible {
 
   /* HERO SECTION */
   .hero-part {
-    background-image: url('src/assets/hero-desktop.png');
+    background-image: url('./src/assets/hero-desktop.png');
     background-position: right bottom;
     background-size: cover;
     background-repeat: no-repeat;
