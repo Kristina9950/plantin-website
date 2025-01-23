@@ -397,6 +397,8 @@ button:focus-visible {
     height: 42vh;
   }
 
+
+
   .hero-line-horizon {
     border-top: 1px dashed var(--c-brown1);
     width: 4rem;
@@ -408,10 +410,9 @@ button:focus-visible {
   .hero-line-verical {
     border-left: 1px dashed var(--c-brown1);
     height: 6.5rem;
-    position: relative;
-    top: 4.7rem;
-    left: 18.9rem;
   }
+
+
 
   .dashed-circle {
     display: inline-block;
@@ -598,29 +599,19 @@ button:focus-visible {
     font-size: var(--s16);
   }
 
-
-
-
-  
-  .story-line-bookbinder {}
-
-  .storyline-bookbinder{}
-
-  .story-line-antwerp{}
-
-  .storyline-antwerp{}
-
-  .story-line-press{}
-
-  .storyline-press{}
-
   .storyline-images{
     background-image: url('src/assets/storyline-frame.png');
     background-position: left bottom;
-    /* background-size: auto, cover; */
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .storyline-images picture {
+    position: absolute;
+    z-index: 1;
   }
 
 
