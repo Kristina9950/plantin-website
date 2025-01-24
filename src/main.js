@@ -1,23 +1,15 @@
 import './reset.css';
 import './style.css';
 
-
-// Solution functionality
-const solutionButton = document.querySelector('.solution-button');
-const solutionDiv = document.querySelector('.solution');
-const closeSolutionButton = document.querySelector('.fa-times');
 const $hamburgerButton = document.querySelector('.nav__button--hamburger');
 const $closeButton = document.querySelector('.nav__button--close');
 const $navList = document.querySelector('.nav__list');
+const bubbles = document.querySelectorAll('.bubble');
+const storylineImages = document.querySelectorAll('.storyline-images picture');
+const solutionButton = document.querySelector('.solution-button');
+const solutionDiv = document.querySelector('.solution');
+const closeSolutionButton = document.querySelector('.fa-times');
 
-
-const showSolution = () => {
-    solutionDiv.classList.remove('hidden');
-};
-
-const closeSolution = () => {
-    solutionDiv.classList.add('hidden');
-};
 
 const navigation = () => {
 
@@ -30,7 +22,6 @@ const navigation = () => {
         $hamburgerButton.setAttribute('aria-expanded', 'false');
     };
 
-    // Close the menu (hide the list, show hamburger icon, hide close icon)
     const closeMenu = () => {
         $navList.classList.add('hidden');
         $navList.classList.remove('visible');
@@ -40,11 +31,9 @@ const navigation = () => {
         $hamburgerButton.setAttribute('aria-expanded', 'true');
     };
 
-    // Toggle the menu when clicking on the hamburger button or close button
     $hamburgerButton.addEventListener('click', openMenu);
     $closeButton.addEventListener('click', closeMenu);
 
-    // Close the menu when Escape is pressed
     window.addEventListener('keyup', (e) => {
         if (e.key === 'Escape') {
             closeMenu();
@@ -52,10 +41,32 @@ const navigation = () => {
     });
 };
 
+const storyline = () => {
+bubbles.forEach((bubble, index) => {
+    bubble.addEventListener('click', () => {
 
-// Initialize event listeners for both features
+        bubbles.forEach(b => b.classList.remove('selected'));
+        storylineImages.forEach(image => image.classList.add('hidden'));
+
+        bubble.classList.add('selected');
+        storylineImages[index].classList.remove('hidden');
+    });
+});
+}
+
+
+
+const showSolution = () => {
+    solutionDiv.classList.remove('hidden');
+};
+const closeSolution = () => {
+    solutionDiv.classList.add('hidden');
+};
+
+
+
 const init = () => {
-    // Solution feature
+
     if (solutionButton && solutionDiv && closeSolutionButton) {
         solutionButton.addEventListener('click', showSolution);
         closeSolutionButton.addEventListener('click', closeSolution);
@@ -63,10 +74,9 @@ const init = () => {
         console.error('Solution elements are missing!');
     }
 
-    // Navigation feature
+    storyline();
     navigation();
 };
 
-// Initialize script
 init();
 
