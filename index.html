@@ -11,48 +11,35 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
-<body>
-  <svg style="display: none">
-    <symbol id="navicon" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M21 11h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
-      <path d="M3 7h18c0.6 0 1-0.4 1-1s-0.4-1-1-1h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1z"></path>
-      <path d="M21 17h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
-    </symbol>
-    <symbol id="close" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M19.1,17.7L6.3,4.9c-.4-.4-1-.4-1.4,0s-.4,1,0,1.4l12.7,12.7c.4.4,1,.4,1.4,0s.4-1,0-1.4Z"></path>
-      <path d="M6.3,19.1l12.7-12.7c.4-.4.4-1,0-1.4s-1-.4-1.4,0l-12.7,12.7c-.4.4-.4,1,0,1.4s1,.4,1.4,0Z"></path>
-    </symbol>
-  </svg>
-
-  <header>
-    <nav class="nav">
-      <button class="nav__button nav__button--hamburger" aria-expanded="false">
-        <svg class="nav__icon nav__icon--hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          viewBox="0 0 24 24">
-          <path d="M3 12h18m-18-6h18m-18 12h18" stroke="#F1F1F1" stroke-width="2" />
-        </svg>
-      </button>
-      <button class="nav__button nav__button--close hidden" aria-expanded="true">
-        <svg class="nav__icon nav__icon--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          viewBox="0 0 24 24">
-          <path d="M18 6L6 18M6 6l12 12" stroke="#F1F1F1" stroke-width="2" />
-        </svg>
-      </button>
-      <ul class="nav__list hidden" id="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#about-plantin">Christophe Plantin</a></li>
-        <li class="nav__item"><a class="nav__link" href="#about-identity">Visual Identity</a></li>
-        <li class="nav__item"><a class="nav__link" href="#about-strategies">Marketing Strategies</a></li>
-        <li>
-          <select name="language" id="language-select">
-            <option value="en">ENG</option>
-            <option value="nl">NL</option>
-            <option value="fr">FR</option>
-          </select>
-        </li>
-      </ul>
-    </nav>
-    <picture class="logo-menu">
-      <img sizes="(max-width: 293px) 100vw, 293px" srcset="
+    <header>
+      <nav class="nav">
+        <button class="nav__button nav__button--hamburger" aria-expanded="false">
+          <svg class="nav__icon nav__icon--hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path d="M3 12h18m-18-6h18m-18 12h18" stroke="#F1F1F1" stroke-width="2"  />
+          </svg>
+        </button>
+        <button class="nav__button nav__button--close hidden" aria-expanded="true">
+          <svg class="nav__icon nav__icon--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path d="M18 6L6 18M6 6l12 12" stroke="#F1F1F1" stroke-width="2" />
+          </svg>
+        </button>
+        <ul class="nav__list hidden" id="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about-plantin">Christophe Plantin</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about-identity">Visual Identity</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about-strategies">Marketing Strategies</a></li>
+          <li>
+            <select name="language" id="language-select">
+              <option value="en">ENG</option>
+              <option value="nl">NL</option>
+              <option value="fr">FR</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      <picture class="logo-menu">
+        <img sizes="(min-width: 380px) 96px, 293px" srcset="
             /src/assets/logo-menu_q3sz4q_c_scale,w_50.avif 50w,
             /src/assets/logo-menu_q3sz4q_c_scale,w_293.avif 293w" src="logo-menu_q3sz4q_c_scale,w_293.avif"
         alt=" logo plantin museum">
@@ -61,32 +48,34 @@
 
   <main>
     <article class="white_article">
-      <div class="hero-image">
-        <div class="hero-line-horizon"></div>
-        <div class="hero-line-verical"></div>
-        <a href="#about-strategies" class="dashed-circle"></a>
-        <div class="hero-image-text">
-          <p class="hero-name">Christophe Plantin</p>
-          <h1 class="hero-title">The Marketing Genius in Printing World</h1>
-        </div>
-      </div>
-
-      <div class="hero-text">
+    <div class="hero-image">
+      <a href="#about-strategies" class="dashed-circle"></a>
+      <div class="hero-image-text">
         <p class="hero-name">Christophe Plantin</p>
         <h1 class="hero-title">The Marketing Genius in Printing World</h1>
       </div>
 
-      <div class="plantin-bubble-container">
-        <p class="bubble-side-text plantin-bubble-left">CHRISTOPHE PLANTIN</p>
-        <picture class="plantin-bubble">
-          <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
+    <div class="hero-text">
+      <p class="hero-name">Christophe Plantin</p>
+      <h1 class="hero-title">The Marketing Genius in Printing World</h1>
+    </div>
+
+    <div class="plantin-bubble-container">
+      <!-- <p class="bubble-side-text plantin-bubble-left">CHRISTOPHE PLANTIN</p> -->
+      <picture class="plantin-bubble">
+        <img sizes="(min-width: 1180px) 1080px, calc(94.42vw - 15px)" srcset="
       /src/assets/plantin-bubble_esg0ht_c_scale,w_100.avif 100w,
       /src/assets/plantin-bubble_esg0ht_c_scale,w_693.avif 693w,
-      /src/assets/plantin-bubble_esg0ht_c_scale,w_1080.avif 1080w" src="plantin-bubble_esg0ht_c_scale,w_1080.avif"
-            alt=" plantin in bubble">
-        </picture>
-        <div class="plantin-line brown-bubble-line"></div>
-        <p class="bubble-side-text plantin-bubble-right">CHRISTOPHE PLANTIN</p>
+      /src/assets/plantin-bubble_esg0ht_c_scale,w_1080.avif 1080w" src="plantin-bubble_esg0ht_c_scale,w_1080.avif" alt=" plantin in bubble">
+      </picture>
+      <div class="plantin-line brown-bubble-line"></div>
+      <!-- <p class="bubble-side-text plantin-bubble-right">CHRISTOPHE PLANTIN</p> -->
+    </div>
+
+    <section id="about-plantin" class="section-about-plantin">
+      <div class="about-plantin-intro-titles">
+        <h2 class="about-plantin-subtitle">Before we reveal all Plantin's marketing secrets, we firstly need to tell you</h2>
+        <h3 class="about-plantin-title">who is Christophe Plantin</h3>
       </div>
 
       <section id="about-plantin" class="section-about-plantin">
@@ -120,153 +109,161 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="storyline-images-frame">
         <div class="storyline-images">
-          <picture class="bookbinder">
+          <picture class="bookbinder hidden">
             <img sizes="(max-width: 553px) 100vw, 553px" srcset="
-        /src/assets/bookbinder_q03o0n_c_scale,w_100.avif 100w,
-        /src/assets/bookbinder_q03o0n_c_scale,w_299.avif 299w,
-        /src/assets/bookbinder_q03o0n_c_scale,w_553.avif 553w" src="bookbinder_q03o0n_c_scale,w_553.avif" alt="book"
-              width="50">
+            /src/assets/bookbinder_q03o0n_c_scale,w_100.avif 100w,
+            /src/assets/bookbinder_q03o0n_c_scale,w_299.avif 299w,
+            /src/assets/bookbinder_q03o0n_c_scale,w_553.avif 553w" src="bookbinder_q03o0n_c_scale,w_553.avif" alt="book"
+              width="140">
           </picture>
-          <picture class="antwerp">
+          <picture class="antwerp hidden">
             <img sizes="(max-width: 930px) 100vw, 930px" srcset="
-        /src/assets/antwerp_enb6e3_c_scale,w_100.avif 100w,
-        /src/assets/antwerp_enb6e3_c_scale,w_623.avif 623w,
-        /src/assets/antwerp_enb6e3_c_scale,w_930.avif 930w" src="antwerp_enb6e3_c_scale,w_930.avif" alt="antwerp map"
-              width="100">
+            /src/assets/antwerp_enb6e3_c_scale,w_100.avif 100w,
+            /src/assets/antwerp_enb6e3_c_scale,w_623.avif 623w,
+            /src/assets/antwerp_enb6e3_c_scale,w_930.avif 930w" src="antwerp_enb6e3_c_scale,w_930.avif" alt="antwerp map"
+              width="230">
           </picture>
-          <picture class="plantinpress">
+          <picture class="plantinpress hidden">
             <img sizes="(max-width: 924px) 100vw, 924px" srcset="
-        /src/assets/plantinpress_nufgic_c_scale,w_100.avif 100w,
-        /src/assets/plantinpress_nufgic_c_scale,w_622.avif 622w,
-        /src/assets/plantinpress_nufgic_c_scale,w_924.avif 924w" src="plantinpress_nufgic_c_scale,w_924.avif"
-              alt="plantin press" width="100">
+            /src/assets/plantinpress_nufgic_c_scale,w_100.avif 100w,
+            /src/assets/plantinpress_nufgic_c_scale,w_622.avif 622w,
+            /src/assets/plantinpress_nufgic_c_scale,w_924.avif 924w" src="plantinpress_nufgic_c_scale,w_924.avif"
+              alt="plantin press" width="200">
           </picture>
         </div>
-      </section>
+      </div>
+    </section>
 
 
-      <section class="section-marketing genius">
-        <div>
-          <h2>It is also important to answer the question of the</h2>
-          <h3>why Marketing Genius</h3>
-        </div>
-        <p>Plantin didn't have a grand plan, but he had an <strong>eye for opportunity</strong>. At the time, books were
-          highly valued, but Plantin
-          saw something more—they weren't just tools for learning or religious devotion, they could be <strong>symbols
-            of power, prestige,
-            and culture.</strong></p>
-        <p>Rather than just meeting demand, Plantin anticipated it, tapping into the desire for books that reflected
-          sophistication
-          and intellect.</p>
-        <picture class="genius-frame">
-          <img sizes="(max-width: 930px) 100vw, 930px" srcset="
+    <section class="section-marketing-genius">
+      <div class="marketing-genius-titles">
+        <h2 class="marketing-genius-subtitle">It is also important to answer the question of</h2>
+        <h3 class="marketing-genius-title">why Marketing Genius</h3>
+      </div>
+      <p class="marketing-genius-textone">Plantin didn't have a grand plan, but he had an <strong>eye for opportunity</strong>. At the time, books were highly valued, but Plantin
+      saw something more—they weren't just tools for learning or religious devotion, they could be <strong>symbols of power, prestige,
+      and culture.</strong></p>
+      <p>Rather than just meeting demand, Plantin anticipated it, tapping into the desire for books that reflected sophistication
+      and intellect.</p>
+      <picture class="genius-frame">
+        <img sizes="(max-width: 930px) 100vw, 930px" srcset="
       /src/assets/genius-frame_tmsxts_c_scale,w_100.avif 100w,
       /src/assets/genius-frame_tmsxts_c_scale,w_621.avif 621w,
-      /src/assets/genius-frame_tmsxts_c_scale,w_930.avif 930w" src="genius-frame_tmsxts_c_scale,w_930.avif"
-            alt="frame">
-        </picture>
-        <p>It was this ability to <strong>spot, seize, and capitalize on opportunities</strong> that transformed
-          Plantin's printing press into a
-          respected brand. His success came not from a formal strategy, but from his natural ability to spot what people
-          wanted,
-          even before they knew it themselves.</p>
-        <p><strong>That's what makes him a marketing genius.</strong></p>
-        <button class="strategies-button">Marketing Strategies</button>
-      </section>
-
-      <div>
-        <p class="bubble-side-text">LOGO & BRANDING</p>
-        <picture class="identity-bubble">
-          <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
+      /src/assets/genius-frame_tmsxts_c_scale,w_930.avif 930w" src="genius-frame_tmsxts_c_scale,w_930.avif" alt="frame" width="300">
+      </picture>
+      <p>It was this ability to <strong>spot, seize, and capitalize on opportunities</strong> that transformed Plantin's printing press into a
+      respected brand. His success came not from a formal strategy, but from his natural ability to spot what people wanted,
+      even before they knew it themselves.</p>
+      <p class="marketing-genius-statements"><strong>That's what makes him a marketing genius.</strong></p>
+      <button class="strategies-button">Marketing Strategies</button>
+    </section>
+    
+    <div class="identity-bubble-container">
+      <!-- <p class="bubble-side-text">LOGO & BRANDING</p> -->
+      <picture class="identity-bubble">
+        <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
       /src/assets/identity-bubble_finh65_c_scale,w_100.avif 100w,
       /src/assets/identity-bubble_finh65_c_scale,w_681.avif 681w,
-      /src/assets/identity-bubble_finh65_c_scale,w_1080.avif 1080w" src="identity-bubble_finh65_c_scale,w_1080.avif"
-            alt="star in bubble">
-        </picture>
-        <div class="identity-line brown-bubble-line"></div>
-        <p class="bubble-side-text">LOGO & BRANDING</p>
+      /src/assets/identity-bubble_finh65_c_scale,w_1080.avif 1080w" src="identity-bubble_finh65_c_scale,w_1080.avif" alt="star in bubble">
+      </picture>
+      <div class="identity-line brown-bubble-line"></div>
+      <!-- <p class="bubble-side-text">LOGO & BRANDING</p> -->
+    </div>
+
+    <section id="about-identity" class="section-identity">
+      <div class="section-identity-titles">
+        <h2 class="section-identity-subtitle">First Things First...</h2>
+        <p class="section-identity-titleone">THE</p>
+        <h4 class="section-identity-titletwo">LOGO & BRAND</h4>
       </div>
+        <p>Christophe Plantin's brand was built on a foundation of precision, craftsmanship, and intellectual rigor. His unique
+        visual identity set his work apart, making each book a <strong>symbol of excellence and trust</strong> in the world of publishing.</p>
+    </section>
 
-      <section id="about-identity" class="section-identity">
-        <div>
-          <h2>First Things First...</h2>
-          <p>THE</p>
-          <h4>LOGO & BRAND</h4>
-          <p>Christophe Plantin's brand was built on a foundation of precision, craftsmanship, and intellectual rigor.
-            His unique
-            visual identity set his work apart, making each book a <strong>symbol of excellence and trust</strong> in
-            the world of publishing.</p>
-        </div>
-      </section>
-
-      <section class="section-guess-logo">
+      <div class="guess-logo-container">
+        <img src="/src/assets/questionmark-green.svg" alt="questionmarkgreen" class="questionmark-green">
         <div class="guess-logo-line"></div>
-        <div class="guess-logo-circle"></div>
-        <p class="guess-logo-questionmark">?</p>
-        <h5>GUESS THE LOGO</h5>
-        <p>Can you guess which tool symbolised Plantin's precision and craftsmanship and became his iconic logo?</p>
+      </div>
+      
+      <section class="section-guess-logo">
+      <h5>GUESS THE LOGO</h5>
+      <p>Can you guess which tool symbolised Plantin's precision and craftsmanship and became his iconic logo?</p>
+      <div class="logo-container">
         <picture class="logo-frame">
           <img sizes="(max-width: 359px) 100vw, 359px" srcset="
-      /src/assets/logo-frame_rqnney_c_scale,w_100.avif 100w,
-      /src/assets/logo-frame_rqnney_c_scale,w_224.avif 224w,
-      /src/assets/logo-frame_rqnney_c_scale,w_359.avif 359w" src="logo-frame_rqnney_c_scale,w_359.avif" alt="frame">
+            /src/assets/logo-frame_rqnney_c_scale,w_100.avif 100w,
+            /src/assets/logo-frame_rqnney_c_scale,w_224.avif 224w,
+            /src/assets/logo-frame_rqnney_c_scale,w_359.avif 359w" src="logo-frame_rqnney_c_scale,w_359.avif" alt="frame">
         </picture>
-        <picture class="logo">
+        <picture class="logo hidden">
           <img sizes="(max-width: 614px) 100vw, 614px" srcset="
-      /src/assets/logo-plantin_nfrwzf_c_scale,w_100.avif 100w,
-      /src/assets/logo-plantin_nfrwzf_c_scale,w_412.avif 412w,
-      /src/assets/logo-plantin_nfrwzf_c_scale,w_614.avif 614w" src="logo-plantin_nfrwzf_c_scale,w_614.avif"
-            alt="plantin logo in frame">
+            /src/assets/logo-plantin_nfrwzf_c_scale,w_100.avif 100w,
+            /src/assets/logo-plantin_nfrwzf_c_scale,w_412.avif 412w,
+            /src/assets/logo-plantin_nfrwzf_c_scale,w_614.avif 614w" src="logo-plantin_nfrwzf_c_scale,w_614.avif" alt="plantin logo in frame">
         </picture>
-        <div>
-          <div class="meter-circle"></div>
+      </div>
+      <div class="tools-and-instructions-wrapper">
+      <div class="tools-container">
+        <div class="meter-circle">
           <picture class="meter">
-            <img sizes="(max-width: 600px) 100vw, 600px" srcset="
-        /src/assets/meter_vs8qtr_c_scale,w_50.avif 50w,
-        /src/assets/meter_vs8qtr_c_scale,w_600.avif 600w" src="meter_vs8qtr_c_scale,w_600.avif" alt="meter">
+            <img sizes="(max-width: 600px) 100vw, 600px" srcset="/src/assets/meter_vs8qtr_c_scale,w_50.avif 50w,
+            /src/assets/meter_vs8qtr_c_scale,w_600.avif 600w" src="meter_vs8qtr_c_scale,w_600.avif" alt="meter">
           </picture>
         </div>
-        <div>
-          <div class="compases-circle"></div>
+        <div class="compases-circle">
           <picture class="compasessmall">
-            <img sizes="(max-width: 600px) 100vw, 600px" srcset="
-        /src/assets/compasessmall_xw6jmr_c_scale,w_50.avif 50w,
-        /src/assets/compasessmall_xw6jmr_c_scale,w_486.avif 486w,
-        /src/assets/compasessmall_xw6jmr_c_scale,w_600.avif 600w" src="compasessmall_xw6jmr_c_scale,w_600.avif"
-              alt="compases">
+            <img sizes="(max-width: 600px) 100vw, 600px" srcset="/src/assets/compasessmall_xw6jmr_c_scale,w_50.avif 50w,
+            /src/assets/compasessmall_xw6jmr_c_scale,w_486.avif 486w,
+            /src/assets/compasessmall_xw6jmr_c_scale,w_600.avif 600w"
+              src="compasessmall_xw6jmr_c_scale,w_600.avif" alt="compasses">
           </picture>
         </div>
-        <div>
-          <div class="sharpener-circle"></div>
+        <div class="sharpener-circle">
           <picture class="sharpener">
-            <img sizes="(max-width: 600px) 100vw, 600px" srcset="
-        /src/assets/sharpener_bjgqsd_c_scale,w_50.avif 50w,
-        /src/assets/sharpener_bjgqsd_c_scale,w_449.avif 449w,
-        /src/assets/sharpener_bjgqsd_c_scale,w_600.avif 600w" src="sharpener_bjgqsd_c_scale,w_600.avif"
+            <img sizes="(max-width: 600px) 100vw, 600px" srcset="/src/assets/sharpener_bjgqsd_c_scale,w_50.avif 50w,
+            /src/assets/sharpener_bjgqsd_c_scale,w_449.avif 449w,
+            /src/assets/sharpener_bjgqsd_c_scale,w_600.avif 600w" src="sharpener_bjgqsd_c_scale,w_600.avif"
               alt="sharpener">
           </picture>
         </div>
-        <div class="guess-logo-line"></div>
-        <p>Hold the Tool until the logo is revealed</p>
-        <i class="fa fa-info-circle"></i>
-      </section>
-
-      <section class="section-identity-logo">
-        <div>
-          <p>LOGO</p>
-          <h3>The Golden Compasses Logo</h3>
-          <picture class="logo-one">
-            <img sizes="(max-width: 960px) 100vw, 960px" srcset="
+      </div>
+      <div class="logo-instruction-line"></div>
+      <div class="instructions-logo-desc">
+      <p class="instructions-logo">Hold the Tool until the logo is revealed</p>
+      <i class="fa fa-info-circle"></i>
+      </div>
+      </div>
+    </section>
+    
+    <section class="section-identity-logo">
+      <div class="section-identity-logo-titles">
+        <p class="section-identity-logo-back">LOGO</p>
+        <h3 class="section-identity-logo-front">The Golden Compasses Logo</h3>
+      </div>
+        <picture class="logo-one">
+          <img sizes="(max-width: 960px) 100vw, 960px" srcset="
         /src/assets/logo-one_lodu2h_c_scale,w_100.avif 100w,
         /src/assets/logo-one_lodu2h_c_scale,w_639.avif 639w,
-        /src/assets/logo-one_lodu2h_c_scale,w_960.avif 960w" src="logo-one_lodu2h_c_scale,w_960.avif"
-              alt="logo of plantin press">
-          </picture>
-          <h6>Strategic Choice</h6>
-          <p>Plantin's Golden Compasses logo symbolized his <strong>meticulous work and intellectual rigor</strong>,
-            reflecting the high standards of
-            his craft. It served as a visual declaration of the care and precision behind every book he produced.</p>
+        /src/assets/logo-one_lodu2h_c_scale,w_960.avif 960w" src="logo-one_lodu2h_c_scale,w_960.avif" alt="logo of plantin press">
+        </picture>
+        <h6 class="logo-one-title">Strategic Choice</h6>
+        <p class="logo-one-text">Plantin's Golden Compasses logo symbolized his <strong>meticulous work and intellectual rigor</strong>, reflecting the high standards of
+        his craft. It served as a visual declaration of the care and precision behind every book he produced.</p>
+    </section>
+
+    <section class="section-identity-brand">
+      <div class="section-identity-brand-titles">
+        <p class="section-identity-brand-back">BRAND</p>
+        <h3 class="section-identity-brand-front">Consistency in Branding</h3>
+        </div>
+        <div class="identity-brand-desc">
+          <h6 class="identity-brand-title">Brand Identity</h6>
+          <p class="identity-brand-text">Plantin went beyond just designing a logo, he ensured that every book he printed followed a consistent and <strong>professional
+          style</strong> that reinforced his brand identity. Regardless of the content, each book featured careful <strong>attention to layout,
+          typeface, and illustration</strong>, making them visually distinct.</p>
         </div>
       </section>
 
@@ -286,68 +283,61 @@
             <img sizes="(max-width: 960px) 100vw, 960px" srcset="
         /src/assets/book-collection_p5af4t_c_scale,w_100.avif 100w,
         /src/assets/book-collection_p5af4t_c_scale,w_639.avif 639w,
-        /src/assets/book-collection_p5af4t_c_scale,w_960.avif 960w" src="book-collection_p5af4t_c_scale,w_960.avif"
-              alt="collection of books">
-          </picture>
-          <div>
-            <h6>Uniform Style</h6>
-            <p>His books possessed a sense of uniformity which not only enhanced their professional appearance but also
-              ensured his
-              books were <strong>instantly recognisable</strong>, creating a cohesive and trusted brand across his
-              entire collection.</p>
-          </div>
+        /src/assets/book-collection_p5af4t_c_scale,w_960.avif 960w" src="book-collection_p5af4t_c_scale,w_960.avif" alt="collection of books" >
+        </picture>
+        <div class="uniform-style-desc">
+          <h6 class="uniform-style-title">Uniform Style</h6>
+          <p class="uniform-style-text">His books possessed a sense of uniformity which not only enhanced their professional appearance but also ensured his
+          books were <strong>instantly recognisable</strong>, creating a cohesive and trusted brand across his entire collection.</p>
         </div>
-      </section>
+    </section>
 
-      <div>
-        <p class="bubble-side-text">marketing strategies</p>
-        <picture class="strategies-bubble">
-          <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
+    <div class="strategies-bubble-container">
+      <!-- <p class="bubble-side-text">marketing strategies</p> -->
+      <picture class="strategies-bubble">
+        <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
       /src/assets/strategies-bubble_rbhham_c_scale,w_100.avif 100w,
       /src/assets/strategies-bubble_rbhham_c_scale,w_811.avif 811w,
-      /src/assets/strategies-bubble_rbhham_c_scale,w_1080.avif 1080w"
-            src="strategies-bubble_rbhham_c_scale,w_1080.avif" alt="buble with globe">
-        </picture>
-        <div class="marketing-line brown-bubble-line"></div>
-        <p class="bubble-side-text">marketing strategies</p>
+      /src/assets/strategies-bubble_rbhham_c_scale,w_1080.avif 1080w" src="strategies-bubble_rbhham_c_scale,w_1080.avif" alt="buble with globe" width="250">
+      </picture>
+      <div class="marketing-line brown-bubble-line"></div>
+      <!-- <p class="bubble-side-text">marketing strategies</p> -->
+    </div>
+
+
+    <section id="about-strategies" class="section-strategies-intro">
+      <div class="section-strategies-intro-titles">
+        <p class="section-strategies-intro-title">THE</p>
+        <h4 class="section-strategies-intro-subtitle">marketing strategies</h4>
       </div>
-
-
-      <section id="about-strategies" class="section-strategies-intro">
-        <p>THE</p>
-        <h4>marketing strategies</h4>
-        <p>Plantin was a master at recognising emerging trends and turning them into opportunities. His <strong>sharp
-            awareness of the
-            political, religious, and cultural climate</strong> allowed him to anticipate what would resonate with his
-          audience, often before
-          they fully realised it themselves. By producing books that not only met existing needs but also
-          <strong>created new desires</strong>, he
-          positioned himself ahead of the curve, consistently delivering works that were both <strong>timely and highly
-            sought-after</strong>.
-          We've distilled his success into 4 key strategies.</p>
-        <div>
-          <h2>We call these 4 strategies</h2>
+      <p>Plantin was a master at recognising emerging trends and turning them into opportunities. His <strong>sharp awareness of the
+        political, religious, and cultural climate</strong> allowed him to anticipate what would resonate with his audience, often before
+        they fully realised it themselves. By producing books that not only met existing needs but also <strong>created new desires</strong>, he
+        positioned himself ahead of the curve, consistently delivering works that were both <strong>timely and highly sought-after</strong>.
+        We've distilled his success into 4 key strategies.</p>
+      <div>
+        <div class="strategy_names">
+          <h2 class="strategy_name-subtitle">We call these 4 strategies</h2>
           <p class="strategy_name">The SAPC</p>
-          <p>marketing</p>
-          <picture class="graph">
-            <img sizes="(max-width: 800px) 100vw, 800px" srcset="
+        </div>
+        <!-- <p>marketing</p> -->
+        <picture class="graph">
+          <img sizes="(max-width: 800px) 100vw, 800px" srcset="
         /src/assets/graph_vtekja_c_scale,w_100.avif 100w,
         /src/assets/graph_vtekja_c_scale,w_528.avif 528w,
         /src/assets/graph_vtekja_c_scale,w_800.avif 800w" src="graph_vtekja_c_scale,w_800.avif" alt="graph">
-          </picture>
-          <p>marketing</p>
-        </div>
-      </section>
-
-      <p class="big-black-text">strategies</p>
+        </picture>
+        <!-- <p>marketing</p> -->
+      </div>
+    </section>
+    <p class="big-black-text">strategies</p>
     </article>
 
 
-
     <article class="black-article">
-      <h2>Sharing the top secret strategies of Christophe Plantin</h2>
+      <h2 class="black-article-intro">Sharing the top secret strategies of Christophe Plantin</h2>
 
-      <div>
+      <div class="social-status-container">
         <picture class="social-status">
           <img sizes="(max-width: 442px) 100vw, 442px" srcset="
         /src/assets/social-status_oupkwr_c_scale,w_50.avif 50w,
@@ -359,53 +349,52 @@
       </div>
 
       <section class="section-ss-intro">
-        <div>
-          <h2>Strategy 1</h2>
-          <h3>Books Representing</h3>
-          <p class="strategy_name">Social Status</p>
+        <div class="section-ss-intro-titles">
+          <h2 class="strategy_name-number">Strategy 1</h2>
+          <div class="strategy-name-titles">
+            <h3 class="strategy_name-subtitle">Books Representing</h3>
+            <p class="strategy_name">Social Status</p>
+          </div>
         </div>
-        <p>Plantin's books were more than sources of knowledge. They were symbols of prestige. Crafted with luxurious
-          materials
-          like <strong>pressed leather bindings, gold-leafed pages, and intricate engravings</strong>, they combined
-          <strong>intellectual value with
-            artistic beauty</strong>.</p>
-        <p>Owning a Plantin book was about more than reading, it showcased power, piety, and social status. These
-          stunning works
-          reflected cultural sophistication and scholarly prestige, perfectly catering to the elite's desire for
-          refinement and
-          exclusivity.</p>
+        <p class="section-ss-intro-textone">Plantin's books were more than sources of knowledge. They were symbols of prestige. Crafted with luxurious materials
+        like <strong>pressed leather bindings, gold-leafed pages, and intricate engravings</strong>, they combined <strong>intellectual value with
+        artistic beauty</strong>.</p>
+        <p class="section-ss-intro-texttwo">Owning a Plantin book was about more than reading, it showcased power, piety, and social status. These stunning works
+        reflected cultural sophistication and scholarly prestige, perfectly catering to the elite's desire for refinement and
+        exclusivity.</p>
       </section>
 
       <section class="section-ss-bible">
-        <h6>polygot bible</h6>
-        <p>The Polyglot Bible was a monumental achievement in both content and design. This has ensured that the book
-          was reserved
-          for the wealthy and educated elite.</p>
+        <h6 class="section-ss-bible-title">polygot bible</h6>
+        <p class="section-ss-bible-text">The Polyglot Bible was a monumental achievement in both content and design. This has ensured that the book was reserved
+        for the wealthy and educated elite.</p>
         <div class="bible-hover">
-          <p>Press the book to uncover what made it so extraordinary.</p>
+          <p class="bible-hover-text">Press or Hover over the book to uncover what made it so extraordinary.</p>
           <div class="bible-hover-white-line"></div>
-          <p>Rich Volume Pages & High Quality Paper</p>
-          <p>Ornate Typafaces</p>
-          <picture class="map">
-            <img sizes="(max-width: 1000px) 100vw, 1000px" srcset="
-          /src/assets/map_llxwrn_c_scale,w_50.avif 50w,
-          /src/assets/map_llxwrn_c_scale,w_660.avif 660w,
-          /src/assets/map_llxwrn_c_scale,w_1000.avif 1000w" src="map_llxwrn_c_scale,w_1000.avif" alt="map">
-          </picture>
-          <picture class="ornate">
-            <img sizes="(max-width: 560px) 100vw, 560px" srcset="
-          /src/assets/ornate_t5hist_c_scale,w_50.avif 50w,
-          /src/assets/ornate_t5hist_c_scale,w_314.avif 314w,
-          /src/assets/ornate_t5hist_c_scale,w_560.avif 560w" src="ornate_t5hist_c_scale,w_560.avif" alt="ornate">
-          </picture>
-          <picture class="snake">
-            <img sizes="(max-width: 625px) 100vw, 625px" srcset="
-          /src/assets/snake_plxte2_c_scale,w_50.avif 50w,
-          /src/assets/snake_plxte2_c_scale,w_373.avif 373w,
-          /src/assets/snake_plxte2_c_scale,w_625.avif 625w" src="snake_plxte2_c_scale,w_625.avif" alt="snake">
-          </picture>
-          <p>Vibrant, Hand-coloured Maps</p>
-          <p>Intricate Woodcut Illustrations</p>
+          <p class="bible-hover-page">Rich Volume Pages & <br> High Quality Paper</p>
+          <p class="bible-hover-ornate">Ornate Typafaces</p>
+          <div class="bible-hover-images">
+            <picture class="map">
+              <img sizes="(max-width: 1000px) 100vw, 1000px" srcset="
+            /src/assets/map_llxwrn_c_scale,w_50.avif 50w,
+            /src/assets/map_llxwrn_c_scale,w_660.avif 660w,
+            /src/assets/map_llxwrn_c_scale,w_1000.avif 1000w" src="map_llxwrn_c_scale,w_1000.avif" alt="map">
+            </picture>
+            <picture class="ornate">
+              <img sizes="(max-width: 560px) 100vw, 560px" srcset="
+            /src/assets/ornate_t5hist_c_scale,w_50.avif 50w,
+            /src/assets/ornate_t5hist_c_scale,w_314.avif 314w,
+            /src/assets/ornate_t5hist_c_scale,w_560.avif 560w" src="ornate_t5hist_c_scale,w_560.avif" alt="ornate">
+            </picture>
+            <picture class="snake">
+              <img sizes="(max-width: 625px) 100vw, 625px" srcset="
+            /src/assets/snake_plxte2_c_scale,w_50.avif 50w,
+            /src/assets/snake_plxte2_c_scale,w_373.avif 373w,
+            /src/assets/snake_plxte2_c_scale,w_625.avif 625w" src="snake_plxte2_c_scale,w_625.avif" alt="snake">
+            </picture>
+          </div>
+            <p class="bible-hover-map">Vibrant, <br> Hand-coloured Maps</p>
+            <p class="bible-hover-woodcut">Intricate <br> Woodcut Illustrations</p>
         </div>
         <p>the Linguistic Diversity</p>
         <p>The Bible was a multilingual masterpiece, featuring texts in <strong>5 different languages</strong> that
@@ -423,9 +412,10 @@
 
       <section class="section-ss-quest">
         <p>SOCIAL STATUS</p>
-        <div class="ss-quest-line"></div>
-        <div class="ss-quest-circle"></div>
-        <p class="ss-quest-questionmark">?</p>
+        <div class="ss-quest-container">
+          <div class="ss-quest-line"></div>
+          <img src="/src/assets/questionmark-blue.svg" alt="questionmark blue" class="questionmark-blue-s">
+        </div>
         <h5>CHOOSE YOUR SOCIAL STATUS</h5>
         <p>Just as today's luxury brands like Gucci or Hermès are seen as symbols of wealth and exclusivity, Plantin's
           books were
@@ -441,7 +431,7 @@
         <img width="300" height="300" src="/src/assets/zara-back.svg" alt="lv" class="zara-back">
       </section>
 
-      <div>
+      <div class="audiences-container">
         <picture class="audiences">
           <img sizes="(max-width: 441px) 100vw, 441px" srcset="
         /src/assets/audiences_p91deb_c_scale,w_50.avif 50w,
@@ -525,7 +515,7 @@
         </div>
       </section>
 
-      <div>
+      <div class="proofreaders-container">
         <picture class="proofreaders">
           <img sizes="(max-width: 440px) 100vw, 440px" srcset="
         /src/assets/proofreaders_vrnteh_c_scale,w_50.avif 50w,
@@ -550,9 +540,10 @@
 
       <section class="section-p-quest">
         <p>becoming proofreader</p>
-        <div class="pp-quest-line"></div>
-        <div class="pp-quest-circle"></div>
-        <p class="pp-quest-questionmark">?</p>
+        <div class="p-quest-container">
+          <div class="p-quest-line"></div>
+          <img src="/src/assets/questionmark-blue.svg" alt="questionmark blue" class="questionmark-blue-p">
+        </div>
         <h5>BECOME A PROOFREADER</h5>
         <p>Below is a passage with 5 mistakes—can you spot and correct them?</p>
         <div class="proofreader-container">
@@ -590,7 +581,7 @@
         </picture>
       </section>
 
-      <div>
+      <div class="collectors-container">
         <picture class="collectors">
           <img sizes="(max-width: 440px) 100vw, 440px" srcset="
         /src/assets/collectors_wanzwl_c_scale,w_50.avif 50w,
@@ -617,7 +608,7 @@
           consumer trends.</p>
       </section>
 
-      <div>
+      <div class="ultimate-container">
         <picture class="ultimate">
           <img sizes="(max-width: 440px) 100vw, 440px" srcset="
         /src/assets/ultimate_zsh1w9_c_scale,w_100.avif 100w,
@@ -669,6 +660,6 @@
       <p>Email: <a href="mailto:museum.plantin.moretus@antwerpen.be">museum.plantin.moretus@antwerpen.be</a></p>
     </div>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

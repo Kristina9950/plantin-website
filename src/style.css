@@ -24,6 +24,10 @@ img {
   border: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 article {
   margin: 0;
   padding-left: 1rem;
@@ -249,8 +253,7 @@ button:focus-visible {
 
 /* MOBILE */
 @media screen and (min-width: 375px) {
-
-  /* GENERAL STYLES*/
+/* GENERAL STYLES*/
   h1 {
     font-family: psfournier-std, sans-serif;
     font-weight: 700;
@@ -286,7 +289,7 @@ button:focus-visible {
   h5 {
     font-family: tenon, sans-serif;
     font-weight: 200;
-    font-style: italic;
+    font-style: normal;
     font-size: var(--s20);
     text-transform: uppercase;
   }
@@ -311,15 +314,16 @@ button:focus-visible {
     text-transform: uppercase;
   }
 
-  .bubble-side-text {
-    font-family: tenon, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: var(--s16);
-    text-transform: uppercase;
-    color: var(--c-brown1);
-    opacity: 10%;
-  }
+    /* .bubble-side-text{
+      font-family: tenon, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: var(--s16);
+      text-transform: uppercase;
+      color: var(--c-brown1);
+      opacity: 10%;
+    } */
+
 
   /* NAVIGATION */
   .nav {
@@ -335,6 +339,7 @@ button:focus-visible {
     margin-left: auto;
   }
 
+
 /* HERO SECTION */
   .hero-image{
     background-image: url('./src/assets/hero-mobile.png');
@@ -344,23 +349,6 @@ button:focus-visible {
     width: 100%;
     height: 42vh;
   }
-
-
-
-  .hero-line-horizon {
-    border-top: 1px dashed var(--c-brown1);
-    width: 4rem;
-    position: relative;
-    top: 2.5rem;
-    left: 12.8rem;
-  }
-
-  .hero-line-verical {
-    border-left: 1px dashed var(--c-brown1);
-    height: 6.5rem;
-  }
-
-
 
   .dashed-circle {
     display: inline-block;
@@ -373,8 +361,8 @@ button:focus-visible {
     /* Make it a circle */
     position: relative;
     cursor: pointer;
-    top: 4.9rem;
-    left: 15.9rem;
+    top: 11.5rem;
+    left: 15.8rem;
     animation: spin 4s infinite linear;
   }
 
@@ -412,13 +400,12 @@ button:focus-visible {
     line-height: var(--s40);
   }
 
-  /* PLANTIN BUBBLE */
-  .plantin-bubble-container {
+
+/* PLANTIN BUBBLE */
+  .plantin-bubble-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    ;
     grid-template-rows: repeat(2, 1fr);
-    ;
     margin-top: 1rem;
   }
 
@@ -444,67 +431,17 @@ button:focus-visible {
     z-index: 0;
   }
 
-  .plantin-bubble-left {
-    grid-column: 1 / 3;
-    grid-row: 1;
-    transform: rotate(-90deg) translateY(-10rem) translateX(0.1rem);
-    display: flex;
-    align-items: center;
-  }
-
-  .plantin-bubble-right {
-    grid-column: 1 / 3;
-    grid-row: 2;
-    transform: rotate(90deg) translateY(-10rem) translateX(-0.1rem);
-    display: flex;
-    align-items: center;
-  }
 
   /* SECTION ABOUT PLANTIN */
   .about-plantin-intro-titles {
     text-align: center;
+    margin: 1rem;
   }
 
-  .about-plantin-title {
-    margin-top: -0.5rem;
+  .about-plantin-subtitle{
+    margin-bottom: 0.3rem;
   }
-
-  /* .plantin-story-line {
-    position: relative;
-    width: 100vw;
-    border-top: 1px solid var(--c-grey1);
-    margin-left: calc(-20%);
-    margin-top: 3rem;
-  }
-
-  .story-line-bookbinder, 
-  .story-line-press,
-  .story-line-antwerp{
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid var(--c-blue2);
-    border-radius: 50%;
-  }
-
-  .story-line-press:hover, 
-  .story-line-bookbinder:hover,
-  .story-line-antwerp:hover{
-    background-color: var(--c-blue2);
-  }
-
-    .plantin-storyline-container {
-      position: relative;
-      width: 100%;
-    }
-  
-    .story-bubbles {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      margin-bottom: 1rem;
-    } */
-
-
+    
   .plantin-storyline-container {
     position: relative;
     width: 100%;
@@ -541,9 +478,16 @@ button:focus-visible {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
   }
 
-  .bubble:hover {
+  .bubble:active
+  .bubble:hover
+  .bubble:focus{
+    background-color: var(--c-blue2);
+  }
+
+  .bubble.selected {
     background-color: var(--c-blue2);
   }
 
@@ -553,24 +497,627 @@ button:focus-visible {
     font-size: var(--s16);
   }
 
-  .storyline-images{
+  .storyline-images-frame {
     background-image: url('./src/assets/storyline-frame.png');
-    background-position: left bottom;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: 400px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
     position: relative;
+    overflow: hidden;
+  }
+
+  .storyline-images {
+    position: relative;
+    left: 4rem;
+    transform: translateY(5rem);
   }
 
   .storyline-images picture {
     position: absolute;
+  }
+
+  .bookbinder{
+    transform: translateX(2rem) translateY(-0.5rem);
+  }
+
+  .antwerp{
+    transform: translateX(-0.6rem) translateY(2rem);
+  }
+
+  .plantinpress{
+    transform: translateX(0.5rem);
+  }
+
+
+/* MARKETING GENIUS */
+  .marketing-genius-titles{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .marketing-genius-subtitle{
+    margin-bottom: 0.3rem;
+  }
+
+  .marketing-genius-textone{
+    margin-bottom: 0.5rem;
+  }
+
+  .genius-frame{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .marketing-genius-statements{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .strategies-button{
+    display: flex;
+    justify-self: center;
+    background-color: var(--c-grey1);
+  }
+
+
+/* IDENTITY BUBBLE */
+  .identity-bubble-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .identity-bubble{
+    width: 250px;
+    height: 250px;
+  }
+
+  .identity-bubble, .identity-line{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
     z-index: 1;
+  }
+
+  .identity-line{
+    border-left: 2px dashed var(--c-brown1);
+    height: 22rem;
+    z-index: 0;
+  }
+
+/* SECTION IDENTITY */
+  .section-identity-titles{
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-identity-titleone{
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.5rem;
+    line-height: 2.5rem;
+  }
+
+  .section-identity-subtitle{
+    margin-bottom: 0.5rem;
+  }
+
+
+/* SECTION GUESS LOGO */
+  .section-guess-logo{
+    margin-bottom: 2rem;
+    background-color: #D4D8CB;
+    margin-left: calc(-1rem);
+    margin-right: calc(-1rem);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 2px 5px #929291;
+  }
+
+ .guess-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(2.5rem);
+  }
+
+  .questionmark-green {
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+  }
+
+  .guess-logo-line {
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: var(--c-green2);
+    z-index: 0;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo-frame img {
+    z-index: 0;
+    width: 270px;
+  }
+
+  .logo img {
+    z-index: 1;
+    position: absolute;
+    width: 160px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .meter-circle, 
+  .compases-circle, 
+  .sharpener-circle{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1px solid var(--c-brown1);
+    background-color: var(--c-blue-white);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .meter-circle:hover, 
+  .compases-circle:hover, 
+  .sharpener-circle:hover,
+  .meter-circle:active, 
+  .compases-circle:active, 
+  .sharpener-circle:active,
+  .meter-circle:focus, 
+  .compases-circle:focus, 
+  .sharpener-circle:focus{
+    background-color: #D4D8CB;
+  }
+
+  .compasessmall img, .meter img, .sharpener img {
+    width: 70px;
+    object-fit: contain;
+  }
+
+  .tools-and-instructions-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+  }
+
+  .tools-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+
+  .logo-instruction-line {
+    position: relative;
+    border-top: 1px solid var(--c-brown1);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .instructions-logo-desc {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .instructions-logo {
+    font-family: tenon, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: var(--s14);
+    color: var(--c-brown1);
+  }
+
+  .fa-info-circle {
+    color: var(--c-brown1);
+  }
+
+
+/* SECTION IDENTITY LOGO */
+  .section-identity-logo{
+    padding-top: 3rem;
+  }
+
+  .section-identity-logo-titles{
+    text-align: center;
+  }
+
+  .section-identity-logo-back{
+    color: #223303;
+    opacity: 7%;
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--s78);
+    line-height: 0;
+  }
+
+  .section-identity-logo-front{
+    transform: translateY(-1.5rem);
+  }
+
+  .logo-one img{
+    width: 300px;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .logo-one-title{
+    padding-bottom: 0.3rem;
+  }
+
+
+/* SECTION IDENTITY BRAND */
+  .section-identity-brand{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-identity-brand-titles {
+    text-align: center;
+  }
+
+  .section-identity-brand-back {
+    color: #223303;
+    opacity: 7%;
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--s78);
+    line-height: 0;
+  }
+
+  .section-identity-brand-front {
+    transform: translateY(-1.5rem);
+  }
+
+  .identity-brand-desc{
+    margin-bottom: 2rem;
+  }
+
+  .identity-brand-title{
+    padding-bottom: 0.3rem;
+  }
+
+  .book-collection img{
+    width: 300px;
+    display: flex;
+    justify-self: center;
+  }
+
+  .uniform-style-desc{
+    margin-top: 2rem;
+  }
+
+  .uniform-style-title{
+    padding-bottom: 0.3rem;
+  }
+
+
+/* STRATEGIES BUBBLE CONTAINER */
+   .strategies-bubble-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 1rem;
+  }
+
+  .strategies-bubble{
+    width: 250px;
+    height: 250px;
+  }
+
+  .strategies-bubble, .marketing-line{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    z-index: 1;
+  }
+
+  .marketing-line{
+    border-left: 2px dashed var(--c-brown1);
+    height: 22rem;
+    z-index: 0;
+  }
+
+
+/* SECTION STRATEGIES INTRO */
+  .section-strategies-intro{
+    margin-top: 2rem;
+  }
+
+  .section-strategies-intro-titles{
+    text-align: center;
+    padding-bottom: 0.7rem;
+  }
+
+  .section-strategies-intro-title{
+    font-size: var(--s78);
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 4rem;
+  }
+
+  .section-strategies-intro-subtitle{
+    line-height: 2.3rem;
+  }
+
+  .strategy_names{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .strategy_name{
+    line-height: 2rem;
+  }
+
+
+/* BLACK & WHITE DIVISION */
+  .big-black-text {
+    font-family: tenon, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: var(--s78); /* Ensure this variable reflects your large font size */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3.7rem;
+    overflow: hidden; /* Hides overflowing content */
+    margin-bottom: -0.45rem;
+    color: var(--c-grey1);
+    -webkit-text-stroke: 1px var(--c-blue3);
+  }
+
+
+/* BLACK ARTICLE */
+  .black-article-intro{
+    padding-top: 3rem;
+    text-align: center;
+    color: var(--c-blue4);
+    font-size: var(--s20);
+    line-height: 1.5rem;
+  }
+
+
+/*  WHITE LETTERS CIRCLES STARTEGIES */
+  .social-status-container, 
+  .audiences-container, 
+  .proofreaders-container,
+  .collectors-container,
+  .ultimate-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-status, 
+  .audiences,
+  .proofreaders,
+  .collectors,
+  .ultimate {
+    width: 150px;
+  }
+
+  .social-status,
+  .audiences,
+  .proofreaders,
+  .collectors,
+  .ultimate,
+  .social-status-line,
+  .audiences-line,
+  .proofreaders-line,
+  .collectors-line,
+  .ultimate-line {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    z-index: 1;
+  }
+
+  .white-strategy-line {
+    border-left: 1px dashed var(--c-blue-white);
+    height: 15rem;
+    z-index: 0;
+  }
+
+
+/* SECTION SS INTRO */
+  .section-ss-intro{
+    background-image: url('./src/assets/ss-intro-image.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .section-ss-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-ss-intro-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+  }
+
+  .strategy-name-titles{
+    text-align: center;
+  }
+
+  .strategy_name-subtitle{
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .section-ss-intro-textone{
+    padding-bottom: 0.5rem;
+  }
+  
+/* SECTION SS BIBLE */
+  .section-ss-bible-title{
+    padding-bottom: 0.5rem;
+  }
+
+  .bible-hover-images {
+    background-image: url('./src/assets/bible.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+  }
+
+  .bible-hover{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .bible-hover-text{
+    font-size: var(--s16);
+    font-family: tenon, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .map img{
+    width: 120px;
+    transform: translateY(8rem) translateX(1.5rem);
+  }
+  
+  .ornate img{
+    width: 60px;
+    transform: translateX(6rem) translateY(2rem);
+  }
+
+  .snake img {
+    width: 100px;
+    transform: translateY(9rem) translateX(1rem);
+   }
+
+  .bible-hover-page,
+  .bible-hover-ornate,
+  .bible-hover-map,
+  .bible-hover-woodcut{
+    font-family: tenon, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: var(--s14);
   }
 
 
 
-  /* PROOFREADER QUEST */
+
+
+/* SECTION SS QUEST */
+  .section-ss-quest{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .ss-quest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .questionmark-blue-s {
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+  }
+
+  .ss-quest-line{
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: var(--c-blue3);
+    z-index: 0;
+  }
+
+/* SECTION P QUEST */
+  .section-p-quest{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .p-quest-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .questionmark-blue-p{
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+  }
+
+  .p-quest-line{
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: var(--c-blue3);
+    z-index: 0;
+  }
+
+
+/* PROOFREADER QUEST */
   .proofreader-rectangle {
     border: 2px solid #3003f8;
     padding: 1.4rem;
@@ -597,101 +1144,82 @@ button:focus-visible {
   }
 }
 
-.section-ss-intro{
-  background-image: url('./src/assets/ss-intro-image.png');
-  background-position: left bottom;
-  /* background-size: auto, cover; */
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
-}
-
-.bible-hover{
-  background-image: url('./src/assets/bible.png');
-  background-position: left bottom;
-  /* background-size: auto, cover; */
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
-}
-
 .bible-languages{
   background-image: url('./src/assets/languageglobe.png');
-  background-position: left bottom;
-  /* background-size: auto, cover; */
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: auto;
 }
 
 .section-a-intro{
   background-image: url('./src/assets/target-left.png'), url('./src/assets/target-right.png') ;
-  background-position: left bottom, right bottom;
-  /* background-size: auto, cover; */
+  background-position: center, center;
+  background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
-  width: 100px, 100px;
-  height: 100px, 100px;
+  width: 100%, 100%;
+  height: auto, auto;
 }
 
 .religious-communities{
-  background-image: url('./src/assets/religion-frame.png'), url('./src/assets/religion-paper.png') ;
-  background-position: left bottom, right bottom;
-  /* background-size: auto, cover; */
+  background-image: url('./assets/religion-frame.png'), url('./src/assets/religion-paper.png') ;
+  background-position: center, center;
+  background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
-  width: 100px, 100px;
-  height: 100px, 100px;
+  width: 100%, 100%;
+  height: auto, auto;
 }
 
 .scholars{
   background-image: url('./src/assets/scholars-frame.png'), url('./src/assets/scholars-paper.png') ;
-  background-position: left bottom, right bottom;
-  /* background-size: auto, cover; */
+  background-position: center, center;
+  background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
-  width: 100px, 100px;
-  height: 100px, 100px;
+  width: 100%, 100%;
+  height: auto, auto;
 }
 
 .middle-class{
   background-image: url('./src/assets/middleclass-frame.png'), url('./src/assets/middleclass-paper.png') ;
-  background-position: left bottom, right bottom;
-  /* background-size: auto, cover; */
+  background-position: center, center;
+  background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
-  width: 100px, 100px;
-  height: 100px, 100px;
+  width: 100%, 100%;
+  height: auto, auto;
 }
 
 .section-p-intro{
   background-image: url('./src/assets/daughters-left.png'), url('./src/assets/daughters-right.png') ;
-  background-position: left bottom, right bottom;
-  /* background-size: auto, cover; */
+  background-position: center, center;
+  background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
-  width: 100px, 100px;
-  height: 100px, 100px;
+  width: 100%, 100%;
+  height: auto, auto;
 }
 
 .section-c{
   background-image: url('./src/assets/handleft.png'), url('./src/assets/handright.png'),url('./src/assets/handfight.png') ;
-  background-position: left bottom, right bottom, right bottom;
-  /* background-size: auto, cover; */
+  background-position: center, center, center;
+  background-size: contain, contain, contain;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  width: 100px, 100px, 100px;
-  height: 100px, 100px, 100px;
+  width: 100%, 100%, 100%;
+  height: auto, auto, auto;
 }
 
 .section-u{
   background-image: url('./src/assets/fireleft.png'), url('./src/assets/fireright.png') ;
-  background-position: left bottom, right bottom;
-  /* background-size: auto, cover; */
+  background-position: center, center;
+  background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
-  width: 100px, 100px;
-  height: 200px, 200px;
+  width: 100%, 100%;
+  height: auto, auto;
 }
 
 
 
 
 /* DESKTOP */
-
 @media screen and (min-width: 960px) {
 
   /* NAVIGATION */
@@ -717,7 +1245,6 @@ button:focus-visible {
 
   .nav__button {
     display: none;
-    /* Hide button on larger screens */
   }
 
 
