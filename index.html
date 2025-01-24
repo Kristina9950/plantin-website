@@ -395,28 +395,40 @@
             <p class="syriac">Syriac</p>
           </div>
         </div>
-
       </section>
 
       <section class="section-ss-quest">
-        <p>SOCIAL STATUS</p>
         <div class="ss-quest-container">
+          <p class="ss-quest-undertext">SOCIAL STATUS</p>
           <div class="ss-quest-line"></div>
           <img src="/src/assets/questionmark-blue.svg" alt="questionmark blue" class="questionmark-blue-s">
         </div>
-        <h5>CHOOSE YOUR SOCIAL STATUS</h5>
-        <p>Just as today's luxury brands like Gucci or Hermès are seen as symbols of wealth and exclusivity, Plantin's
+        <h5 class="ss-quest-title">CHOOSE YOUR SOCIAL STATUS</h5>
+        <p class="ss-quest-textone"> Just as today's luxury brands like Gucci or Hermès are seen as symbols of wealth and exclusivity, Plantin's
           books were
           as well symbols of cultural capital.</p>
-        <p>Choose your favorite brand and discover which <strong>book and social status you would have been associated
-            with</strong> during
-          Plantin's era.</p>
-        <img width="300" height="300" src="/src/assets/lv-front.svg" alt="lv" class="lv-front">
-        <img width="300" height="300" src="/src/assets/lv-back.svg" alt="lv" class="lv-back">
-        <img width="300" height="300" src="/src/assets/polo-front.svg" alt="lv" class="polo-front">
-        <img width="300" height="300" src="/src/assets/polo-back.svg" alt="lv" class="polo-back">
-        <img width="300" height="300" src="/src/assets/zara-front.svg" alt="lv" class="zara-front">
-        <img width="300" height="300" src="/src/assets/zara-back.svg" alt="lv" class="zara-back">
+        <p class="ss-quest-texttwo">Choose your favorite brand and discover which <strong>book and social status you would have been associated
+            with</strong> during Plantin's era.</p>
+        <div class="flipcard">
+            <div class="flipcard-lv card">
+              <div class="flipcard-inner">
+                <img width="300" height="300" src="/src/assets/lv-front.svg" alt="lv" class="lv-front card-front">
+                <img width="300" height="300" src="/src/assets/lv-back.svg" alt="lv" class="lv-back card-back">
+              </div>
+            </div>
+            <div class="flipcard-polo card">
+              <div class="flipcard-inner">
+                <img width="300" height="300" src="/src/assets/polo-front.svg" alt="lv" class="polo-front card-front">
+                <img width="300" height="300" src="/src/assets/polo-back.svg" alt="lv" class="polo-back card-back">
+              </div>
+            </div>
+            <div class="flipcard-zara card">
+              <div class="flipcard-inner">
+                <img width="300" height="300" src="/src/assets/zara-front.svg" alt="lv" class="zara-front card-front">
+                <img width="300" height="300" src="/src/assets/zara-back.svg" alt="lv" class="zara-back card-back">
+              </div>
+            </div>
+        </div>
       </section>
 
       <div class="audiences-container">
@@ -430,10 +442,14 @@
       </div>
 
       <section class="section-a-intro">
-        <h2>Strategy 2</h2>
-        <h3>Targeting Different</h3>
-        <p class="strategy_name">Audiences</p>
-        <p>Christophe Plantin was a <strong>master of adaptability</strong>, creating books that catered to a wide range
+        <div class="section-a-intro-titles">
+          <h2 class="strategy_name-number">Strategy 2</h2>
+          <div class="strategy_name-titles">
+            <h3 class="strategy_name-subtitle">Targeting Different</h3>
+            <p class="strategy_name">Audiences</p>
+          </div>
+        </div>
+        <p class="section-a-intro-text">Christophe Plantin was a <strong>master of adaptability</strong>, creating books that catered to a wide range
           of audiences. From
           religious communities to Renaissance scholars and the emerging middle class, Plantin's press produced works
           that
@@ -443,19 +459,24 @@
 
       <section class="section-a-audiences">
         <div class="religious-communities">
-          <p>Catering to Religious Communities</p>
-          <div class="white-circle-religious"></div>
-          <img width="100" height="100" src="/src/assets/inktampon.svg" alt="ink tampon" class="inktampon-religion">
-          <i class="fa fa-info-circle"></i>
-          <p>Drag the Ink Tampon over the paper to reveal the text</p>
-          <p>While Europe was deeply divided between Catholics and Protestants, he produced works for both sides,
-            positioning himself
-            as a trusted publisher for multiple faiths. This remarkable ability to <strong>navigate the religious
-              tensions</strong> allowed him to
-            maintain a wide-reaching client base.</p>
-          <p>His most notable religious work was the Polygot Bible, it was a masterpiece that displayed Plantin's skill
-            in
-            accommodating the complex needs of different religious communities.</p>
+          <div class="catering-religius-frame">
+          <p class="catering-religius-title">Catering to Religious Communities</p>
+          </div>
+          <div class="ink-circle-w-instructions">
+          <div class="ink-circle-container">
+          <div class="white-circle-religion ink-circle"></div>
+          <img width="100" height="100" src="/src/assets/inktampon.svg" alt="ink tampon" class="inktampon-religion inktampon">
+          </div>
+          <i class="fa fa-info-circle ink-icon"></i>
+          <p class="ink-instructions">Drag the Ink Tampon over the paper to reveal the text</p>
+          </div>
+          <div class="religius-communities-text">
+            <p class="religius-communities-textone">While Europe was deeply divided between Catholics and Protestants, he produced works for both sides,
+              positioning himself as a trusted publisher for multiple faiths. This remarkable ability to <strong> navigate the religious tensions </strong> allowed him to maintain a wide-reaching client base.</p>
+            <p class="religius-communities-texttwo">His most notable religious work was the Polygot Bible, it was a masterpiece that displayed Plantin's skill
+              in
+              accommodating the complex needs of different religious communities.</p>
+            </div>
           <picture class="maria">
             <img sizes="(max-width: 558px) 100vw, 558px" srcset="
           /src/assets/maria_gvwdjl_c_scale,w_50.avif 50w,
@@ -464,15 +485,19 @@
           </picture>
         </div>
         <div class="scholars">
-          <p>Appealing to scholars</p>
-          <div class="white-circle-scholars"></div>
-          <img width="100" height="100" src="/src/assets/inktampon.svg" alt="ink tampon" class="inktampon-scholars">
-          <p>Plantin's printing house became the go-to for intellectuals, thanks to his <strong>focus on humanist and
-              scientific texts.</strong> These
-            works attracted the growing community of scholars and thinkers of the Renaissance. Whether it was Aristotle,
-            Galen, or
-            the works of early scientists, Plantin's press offered intellectual prestige wrapped in beautifully crafted
-            volumes.</p>
+          <div class="appealing-scholars-frame">
+          <p class="appealing-scholars-title">Appealing to scholars</p>
+          </div>
+          <div class="ink-circle-container">
+          <div class="white-circle-scholars ink-circle"></div>
+          <img width="100" height="100" src="/src/assets/inktampon.svg" alt="ink tampon" class="inktampon-scholars inktampon">
+          </div>
+          <div class="appealing-scholars-text">
+            <p>Plantin's printing house became the go-to for intellectuals, thanks to his <strong>focus on humanist and scientific texts.</strong> These
+              works attracted the growing community of scholars and thinkers of the Renaissance. Whether it was Aristotle, Galen, or
+              the works of early scientists, Plantin's press offered intellectual prestige wrapped in beautifully crafted
+              volumes.</p>
+            </div>
           <picture class="scholargraph">
             <img sizes="(max-width: 760px) 100vw, 760px" srcset="
           /src/assets/scholargraph_swacvw_c_scale,w_50.avif 50w,
@@ -482,9 +507,14 @@
           </picture>
         </div>
         <div class="middle-class">
-          <p>Recognising needs of middle-class</p>
-          <div class="white-circle-middleclass"></div>
-          <img width="100" height="100" src="/src/assets/inktampon.svg" alt="ink tampon" class="inktampon-middleclass">
+          <div class="middle-class-frame">
+          <p class="middle-class-title">Recognising needs of middle-class</p>
+          </div>
+          <div class="ink-circle-container">
+          <div class="white-circle-middleclass ink-circle"></div>
+          <img width="100" height="100" src="/src/assets/inktampon.svg" alt="ink tampon" class="inktampon-middleclass inktampon">
+          </div>
+          <div class="rmiddle-class-text"></div>
           <p>While Plantin's luxury editions were famous, he also recognized the growing middle class and their thirst
             for knowledge.
             To cater to this emerging audience, he produced <strong>affordable devotional texts and practical
@@ -514,9 +544,13 @@
       </div>
 
       <section class="section-p-intro">
-        <h2>Strategy 3</h2>
-        <h3>employing daughters as</h3>
+        <div class="section-p-intro-titles">
+        <h2 class="strategy_name-number">Strategy 3</h2>
+        <div class="strategy-name-titles">
+        <h3 class="strategy_name-subtitle">employing daughters as</h3>
         <p class="strategy_name">proofreaders</p>
+        </div>
+        </div>
         <p>Plantin has involved his daughters in his printing business, partly as a pragmatic strategy to save money and
           strengthen
           the family enterprise, as well as to ensure the <strong>books were free from errors before printing</strong>.
@@ -527,13 +561,15 @@
       </section>
 
       <section class="section-p-quest">
-        <p>becoming proofreader</p>
         <div class="p-quest-container">
+          <p class="p-quest-undertext">becoming proofreader</p>
           <div class="p-quest-line"></div>
           <img src="/src/assets/questionmark-blue.svg" alt="questionmark blue" class="questionmark-blue-p">
         </div>
+        <div class="p-quest-desc">
         <h5>BECOME A PROOFREADER</h5>
-        <p>Below is a passage with 5 mistakes—can you spot and correct them?</p>
+        <p>Below is a passage with 5 mistakes. <br> Can you spot and correct them?</p>
+        </div>
         <div class="proofreader-container">
           <p class="proofreader-rectangle" contenteditable="true" spellcheck="false">
             Christophe Plantin was a pioner in the prinitng industry. His dedication to accuarcy made his books famus
@@ -560,7 +596,7 @@
         /src/assets/proofreader-guy_kxhkjo_c_scale,w_463.avif 463w" src="proofreader-guy_kxhkjo_c_scale,w_463.avif"
             alt="proofreader male">
         </picture>
-        <picture class="proofreader-right">
+        <picture class="proofreader-right hidden">
           <img sizes="(max-width: 463px) 100vw, 463px" srcset="
         /src/assets/proofreader-guy_kxhkjo_c_scale,w_50.avif 50w,
         /src/assets/proofreader-guy_kxhkjo_c_scale,w_306.avif 306w,
@@ -568,7 +604,6 @@
             alt="proofreader male">
         </picture>
       </section>
-
       <div class="collectors-container">
         <picture class="collectors">
           <img sizes="(max-width: 440px) 100vw, 440px" srcset="

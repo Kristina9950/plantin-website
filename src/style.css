@@ -1013,27 +1013,24 @@ button:focus-visible {
 
 
 /* SECTION SS INTRO */
-  .section-ss-intro{
+  .section-ss-intro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+
+  .section-ss-intro-titles{
     background-image: url('./assets/ss-intro-image.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
-    margin-bottom: 3rem;
-  }
-
-  .section-ss-intro {
+    padding-bottom: 3rem;
+    padding-top: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .section-ss-intro-titles {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 1rem;
   }
 
   .strategy-name-titles{
@@ -1176,7 +1173,7 @@ button:focus-visible {
 
 /* SECTION SS QUEST */
   .section-ss-quest{
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     margin-bottom: 2rem;
   }
 
@@ -1186,6 +1183,7 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 2rem;
   }
 
   .questionmark-blue-s {
@@ -1203,6 +1201,219 @@ button:focus-visible {
     z-index: 0;
   }
 
+  .ss-quest-undertext{
+    position: absolute;
+    width: 100vw;
+    z-index: 0;
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--s40);
+    text-align: center;
+    color: #82828417;
+  }
+
+  .ss-quest-title{
+    padding-bottom: 0.5rem;
+  }
+
+  .ss-quest-textone{
+    padding-bottom: 0.5rem;
+  }
+
+  .ss-quest-texttwo{
+    padding-bottom: 1rem;
+  }
+
+  .flipcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .card {
+    perspective: 1000px;
+  }
+
+  .flipcard-inner {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .card-front, .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-front {
+    z-index: 1;
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+  }
+
+  .card.flip .flipcard-inner {
+    transform: rotateY(180deg);
+  }
+
+
+/* SECTION A INTRO */
+  .section-a-intro-titles{
+    background-image: url('./assets/target-left.png'), url('./assets/target-right.png');
+    background-position: left, right;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-a-intro .section-a-intro-titles h2,
+  .section-a-intro .section-a-intro-titles h3,
+  .section-a-intro .section-a-intro-titles p {
+    transform: translateY(4.5rem);
+  }
+
+  .section-a-intro-text{
+    padding-bottom: 0.5rem;
+  }
+
+
+/* SECTION A AUDIENCES */
+  .section-a-audiences{
+    margin-top: 3rem;
+  }
+
+  .catering-religius-frame {
+    background-image: url('./assets/religion-frame.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .catering-religius-title{
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: var(--s16);
+  }
+
+  .ink-circle-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+  }
+
+  .ink-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: var(--c-blue-white);
+    border: 1px solid var(--c-green1);
+    z-index: 0;
+    position: absolute;
+  }
+
+  .ink-circle-w-instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inktampon{
+    z-index: 1;
+    position: relative;
+    width: 60px;
+    transform: translateY(-1rem);
+  }
+
+  .ink-icon{
+    color: var(--c-blue-white);
+    font-size: var(--s14);
+    padding: 0.3rem;
+  }
+
+  .ink-instructions{
+    font-size: var(--s14);
+  }
+
+  .religius-communities-text{
+    padding-top: 2rem;
+    font-family: psfournier-std, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .religius-communities-textone{
+    background-image: url('./assets/religion-paper.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    color: var(--c-grey1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: var(--s16);
+  }
+
+  .religius-communities-texttwo{
+    background-image: url('./assets/religion-paper.png');
+    background-position:  top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    color: var(--c-grey1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+  }
+
+
+/* SECTION P INTRO */
+  .section-p-intro-titles{
+    background-image: url('./assets/daughters-left.png'), url('./assets/daughters-right.png');
+    background-position: -10% center, 110%center;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%, 100%;
+    height: auto, auto;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
+  }
+
+
+
+
 /* SECTION P QUEST */
   .section-p-quest{
     margin-top: 2rem;
@@ -1215,6 +1426,19 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
     position: relative;
+  }
+
+  .p-quest-undertext{
+    position: absolute;
+    width: 100vw;
+    z-index: 0;
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #82828417;
+    text-transform: uppercase;
   }
 
   .questionmark-blue-p{
@@ -1232,6 +1456,18 @@ button:focus-visible {
     z-index: 0;
   }
 
+  .p-quest-desc{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .p-quest-desc p{
+    font-weight: 200;
+    padding-top: 0.3rem;
+    font-size: var(--s16);
+  }
+  
 
 /* PROOFREADER QUEST */
   .proofreader-rectangle {
@@ -1258,24 +1494,21 @@ button:focus-visible {
     font-family: psfournier-std, sans-serif;
     font-weight: 400;
   }
-}
 
-.section-a-intro{
-  background-image: url('./assets/target-left.png'), url('./assets/target-right.png') ;
-  background-position: center, center;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  width: 100%, 100%;
-  height: auto, auto;
-}
+  .solution-button{
+    display: flex;
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
 
-.religious-communities{
-  background-image: url('./assets/religion-frame.png'), url('./assets/religion-paper.png') ;
-  background-position: center, center;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  width: 100%, 100%;
-  height: auto, auto;
+  .proofreader-left img{
+    transform: scaleX(-1);
+    width: 100px;
+    padding-top: 1rem;
+    display: flex;
+    justify-self: center;
+  }
+
 }
 
 .scholars{
@@ -1289,15 +1522,6 @@ button:focus-visible {
 
 .middle-class{
   background-image: url('./assets/middleclass-frame.png'), url('./assets/middleclass-paper.png') ;
-  background-position: center, center;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  width: 100%, 100%;
-  height: auto, auto;
-}
-
-.section-p-intro{
-  background-image: url('./assets/daughters-left.png'), url('./assets/daughters-right.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;

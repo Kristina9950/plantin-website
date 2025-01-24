@@ -56,6 +56,16 @@ bubbles.forEach((bubble, index) => {
 
 
 
+const flipcard = () => {
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.toggle('flip');
+    });
+});
+}
+
+
+
 const showSolution = () => {
     solutionDiv.classList.remove('hidden');
 };
@@ -74,8 +84,9 @@ const init = () => {
         console.error('Solution elements are missing!');
     }
 
-    storyline();
     navigation();
+    storyline();
+    flipcard();
 };
 
 init();
