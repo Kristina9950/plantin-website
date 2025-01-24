@@ -1101,6 +1101,23 @@ button:focus-visible {
     font-size: var(--s14);
   }
 
+  .linguistic-diversity{
+    font-size: var(--s18);
+    font-family: psfournier-std, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+  }
+
+  .bible-languages {
+    background-image: url('./assets/languageglobe.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+  }
 
 
 
@@ -1189,15 +1206,6 @@ button:focus-visible {
     font-family: psfournier-std, sans-serif;
     font-weight: 400;
   }
-}
-
-.bible-languages{
-  background-image: url('./assets/languageglobe.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
 }
 
 .section-a-intro{
