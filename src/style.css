@@ -340,58 +340,8 @@ button:focus-visible {
   }
 
 
-  .nav__button--close.visible {
-    display: block;
-  }
-
-  .nav__button--hamburger {
-    display: block;
-  }
-
-  .nav__button--hamburger.hidden {
-    display: none;
-  }
-
-  .nav__list {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--c-brown1);
-    position: absolute;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    z-index: 1;
-  }
-
-  .nav__list.hidden {
-    display: none;
-  }
-
-  .nav__list.visible {
-    display: flex;
-    flex-direction: column;
-  }
-
-  header {
-    position: relative;
-  }
-
-  .logo-menu {
-    position: absolute;
-    top: 50%;
-    left: -5%;
-    transform: translateY(-50%);
-    z-index: 2;
-  }
-
-  .logo-menu img {
-    max-width: var(--s96);
-    height: auto;
-  }
-
-  /* HERO SECTION */
-  .hero-image {
+/* HERO SECTION */
+  .hero-image{
     background-image: url('./assets/hero-mobile.png');
     background-position: center center;
     background-size: cover;
