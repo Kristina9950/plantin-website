@@ -548,7 +548,7 @@ button:focus-visible {
   }
 
   .storyline-images-frame {
-    background-image: url('./src/assets/storyline-frame.png');
+    background-image: url('./assets/storyline-frame.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
