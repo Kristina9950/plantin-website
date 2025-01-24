@@ -390,13 +390,8 @@ button:focus-visible {
     height: auto;
   }
 
-  /* HERO SECTION */
-  .hero-image {
-<<<<<<< HEAD
 /* HERO SECTION */
   .hero-image{
-=======
->>>>>>> 6c5464b (test hero)
     background-image: url('./assets/hero-mobile.png');
     background-position: center center;
     background-size: cover;
@@ -1269,7 +1264,6 @@ button:focus-visible {
   background-repeat: no-repeat, no-repeat;
   width: 100%, 100%;
   height: auto, auto;
-}
 }
 
 
