@@ -1063,7 +1063,7 @@ button:focus-visible {
   }
 
   .bible-hover-images {
-    background-image: url('./src/assets/bible.png');
+    background-image: url('./assets/bible.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
