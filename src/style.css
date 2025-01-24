@@ -403,12 +403,9 @@ button:focus-visible {
   .dashed-circle {
     display: inline-block;
     width: 6rem;
-    /* Size of the circle */
     height: 6rem;
     border: 2px dashed var(--c-brown1);
-    /* Dashed border color */
     border-radius: 50%;
-    /* Make it a circle */
     position: relative;
     cursor: pointer;
     top: 11.5rem;
@@ -1017,7 +1014,7 @@ button:focus-visible {
 
 /* SECTION SS INTRO */
   .section-ss-intro{
-    background-image: url('./src/assets/ss-intro-image.png');
+    background-image: url('./assets/ss-intro-image.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1195,7 +1192,7 @@ button:focus-visible {
 }
 
 .bible-languages{
-  background-image: url('./src/assets/languageglobe.png');
+  background-image: url('./assets/languageglobe.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1204,7 +1201,7 @@ button:focus-visible {
 }
 
 .section-a-intro{
-  background-image: url('./src/assets/target-left.png'), url('./src/assets/target-right.png') ;
+  background-image: url('./assets/target-left.png'), url('./src/assets/target-right.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1213,7 +1210,7 @@ button:focus-visible {
 }
 
 .religious-communities{
-  background-image: url('./src/assets/religion-frame.png'), url('./src/assets/religion-paper.png') ;
+  background-image: url('./assets/religion-frame.png'), url('./src/assets/religion-paper.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1222,7 +1219,7 @@ button:focus-visible {
 }
 
 .scholars{
-  background-image: url('./src/assets/scholars-frame.png'), url('./src/assets/scholars-paper.png') ;
+  background-image: url('./assets/scholars-frame.png'), url('./src/assets/scholars-paper.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1231,7 +1228,7 @@ button:focus-visible {
 }
 
 .middle-class{
-  background-image: url('./src/assets/middleclass-frame.png'), url('./src/assets/middleclass-paper.png') ;
+  background-image: url('./assets/middleclass-frame.png'), url('./src/assets/middleclass-paper.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1240,7 +1237,7 @@ button:focus-visible {
 }
 
 .section-p-intro{
-  background-image: url('./src/assets/daughters-left.png'), url('./src/assets/daughters-right.png') ;
+  background-image: url('./assets/daughters-left.png'), url('./src/assets/daughters-right.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1249,7 +1246,7 @@ button:focus-visible {
 }
 
 .section-c{
-  background-image: url('./src/assets/handleft.png'), url('./src/assets/handright.png'),url('./src/assets/handfight.png') ;
+  background-image: url('./assets/handleft.png'), url('./src/assets/handright.png'),url('./src/assets/handfight.png') ;
   background-position: center, center, center;
   background-size: contain, contain, contain;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -1258,7 +1255,7 @@ button:focus-visible {
 }
 
 .section-u{
-  background-image: url('./src/assets/fireleft.png'), url('./src/assets/fireright.png') ;
+  background-image: url('./assets/fireleft.png'), url('./src/assets/fireright.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1300,7 +1297,7 @@ button:focus-visible {
 
   /* HERO SECTION */
   .hero-part {
-    background-image: url('./src/assets/hero-desktop.png');
+    background-image: url('./assets/hero-desktop.png');
     background-position: right bottom;
     background-size: cover;
     background-repeat: no-repeat;
