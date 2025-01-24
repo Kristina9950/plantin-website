@@ -1060,36 +1060,53 @@ button:focus-visible {
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: 250px;
+    position: relative;
   }
 
-  .bible-hover{
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+  .bible-hover {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
   }
 
-  .bible-hover-text{
+  .bible-hover-text {
     font-size: var(--s16);
     font-family: tenon, sans-serif;
     font-weight: 200;
     font-style: normal;
     text-align: center;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed var(--c-blue3);
+    display: inline-block;
   }
 
-  .map img{
-    width: 120px;
-    transform: translateY(8rem) translateX(1.5rem);
+  .bible-hover-top-text, .bible-hover-bottom-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
-  
-  .ornate img{
+
+  .map img {
+    width: 130px;
+    position: absolute;
+    top: 40%;
+    left: 7%;
+  }
+
+  .ornate img {
     width: 60px;
-    transform: translateX(6rem) translateY(2rem);
+    position: absolute;
+    top: 20%;
+    left: 70%;
   }
 
   .snake img {
     width: 100px;
-    transform: translateY(9rem) translateX(1rem);
-   }
+    position: absolute;
+    top: 45%;
+    left: 55%;
+  }
 
   .bible-hover-page,
   .bible-hover-ornate,
@@ -1114,58 +1131,47 @@ button:focus-visible {
     margin-bottom: 2rem;
   }
 
-.bible-languages-container {
-  position: relative;
-  width: 100%;
-  height: 200px; /* Adjust the height as needed */
-}
-
-/* Spinning animation for the globe */
-.bible-languages-globe {
-  background-image: url('./assets/languageglobe.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: spin 5s linear infinite;
-}
-
-/* Animation for spinning the globe */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+  .bible-languages-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  100% {
-    transform: rotate(360deg);
+
+  .bible-languages-globe {
+    background-image: url('./assets/languageglobe.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spin 5s linear infinite;
   }
-}
 
-/* Style for positioning the language names around the globe */
-.bible-languages {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Prevent interaction with the texts */
-}
+  .bible-languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
 
-/* Individual language p elements */
-.bible-languages p {
-  font-family: psfournier-std, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  text-transform: uppercase;
-  margin: 0;
-  pointer-events: auto;
-  width: 100%;
-  text-align: center;
-}
-
+  .bible-languages p {
+    font-family: psfournier-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: var(--c-blue3);
+    margin: 0;
+    text-align: center;
+    flex: 0 1 auto;
+    white-space: nowrap;
+  }
 
 
 /* SECTION SS QUEST */
@@ -1255,7 +1261,7 @@ button:focus-visible {
 }
 
 .section-a-intro{
-  background-image: url('./assets/target-left.png'), url('./src/assets/target-right.png') ;
+  background-image: url('./assets/target-left.png'), url('./assets/target-right.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1264,7 +1270,7 @@ button:focus-visible {
 }
 
 .religious-communities{
-  background-image: url('./assets/religion-frame.png'), url('./src/assets/religion-paper.png') ;
+  background-image: url('./assets/religion-frame.png'), url('./assets/religion-paper.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1273,7 +1279,7 @@ button:focus-visible {
 }
 
 .scholars{
-  background-image: url('./assets/scholars-frame.png'), url('./src/assets/scholars-paper.png') ;
+  background-image: url('./assets/scholars-frame.png'), url('./assets/scholars-paper.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1282,7 +1288,7 @@ button:focus-visible {
 }
 
 .middle-class{
-  background-image: url('./assets/middleclass-frame.png'), url('./src/assets/middleclass-paper.png') ;
+  background-image: url('./assets/middleclass-frame.png'), url('./assets/middleclass-paper.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1291,7 +1297,7 @@ button:focus-visible {
 }
 
 .section-p-intro{
-  background-image: url('./assets/daughters-left.png'), url('./src/assets/daughters-right.png') ;
+  background-image: url('./assets/daughters-left.png'), url('./assets/daughters-right.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
@@ -1300,7 +1306,7 @@ button:focus-visible {
 }
 
 .section-c{
-  background-image: url('./assets/handleft.png'), url('./src/assets/handright.png'),url('./src/assets/handfight.png') ;
+  background-image: url('./assets/handleft.png'), url('./assets/handright.png'),url('./assets/handfight.png') ;
   background-position: center, center, center;
   background-size: contain, contain, contain;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -1309,7 +1315,7 @@ button:focus-visible {
 }
 
 .section-u{
-  background-image: url('./assets/fireleft.png'), url('./src/assets/fireright.png') ;
+  background-image: url('./assets/fireleft.png'), url('./assets/fireright.png') ;
   background-position: center, center;
   background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
