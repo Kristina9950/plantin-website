@@ -394,7 +394,7 @@ button:focus-visible {
 
 /* HERO SECTION */
   .hero-image{
-    background-image: url('./src/assets/hero-mobile.png');
+    background-image: url('./assets/hero-mobile.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
