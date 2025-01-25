@@ -936,10 +936,17 @@ button:focus-visible {
     font-style: normal;
     font-size: var(--s78);
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     line-height: 3.7rem;
     overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
     margin-bottom: -0.45rem;
+    padding-left: 0;
+    padding-right: 0;
     color: var(--c-grey1);
     -webkit-text-stroke: 1px var(--c-blue3);
   }
@@ -1807,9 +1814,76 @@ button:focus-visible {
 
 
 
-
 /* DESKTOP */
 @media screen and (min-width: 960px) {
+/* GENERAL STYLES*/
+  h1 {
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.375rem;
+  }
+
+  .hero-title{
+    line-height: 1;
+  }
+
+  h2 {
+    font-family: tenon, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: var(--s26);
+    line-height: 1.2rem;
+  }
+
+  h3 {
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--s50);
+    text-transform: uppercase;
+    line-height: 1.6rem;
+  }
+
+  h4 {
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--s96);
+    text-transform: uppercase;
+  }
+
+  h5 {
+    font-family: tenon, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: var(--s36);
+    text-transform: uppercase;
+  }
+
+  h6 {
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--s20);
+    text-transform: uppercase;
+  }
+
+  .strategy_name {
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--s78);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+
+
+
+
+
 
   /* NAVIGATION */
   /* .nav {
@@ -1838,13 +1912,13 @@ button:focus-visible {
 
 
   /* HERO SECTION */
-  .hero-part {
+    .hero-image{
     background-image: url('./assets/hero-desktop.png');
-    background-position: right bottom;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 100px;
+    width: 100%;
+    height: auto;
   }
 
   .hero-text {
