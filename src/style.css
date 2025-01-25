@@ -106,7 +106,7 @@ strong {
 
 a {
   text-decoration: none;
-  color: var(--c-blue3);
+  color: var(--c-grey1);
 }
 
 nav ul,
@@ -312,18 +312,8 @@ button:focus-visible {
     font-style: normal;
     font-size: var(--s36);
     text-transform: uppercase;
+    text-align: center;
   }
-
-    /* .bubble-side-text{
-      font-family: tenon, sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: var(--s16);
-      text-transform: uppercase;
-      color: var(--c-brown1);
-      opacity: 10%;
-    } */
-
 
   /* NAVIGATION */
   .nav {
@@ -944,11 +934,11 @@ button:focus-visible {
     font-family: tenon, sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: var(--s78); /* Ensure this variable reflects your large font size */
+    font-size: var(--s78);
     text-transform: uppercase;
     text-align: center;
     line-height: 3.7rem;
-    overflow: hidden; /* Hides overflowing content */
+    overflow: hidden;
     margin-bottom: -0.45rem;
     color: var(--c-grey1);
     -webkit-text-stroke: 1px var(--c-blue3);
@@ -956,8 +946,12 @@ button:focus-visible {
 
 
 /* BLACK ARTICLE */
-  .black-article-intro{
+  .black-article{
     padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .black-article-intro{
     text-align: center;
     color: var(--c-blue4);
     font-size: var(--s20);
@@ -1046,6 +1040,7 @@ button:focus-visible {
     padding-bottom: 0.5rem;
   }
   
+
 /* SECTION SS BIBLE */
   .section-ss-bible-title{
     padding-bottom: 0.5rem;
@@ -1268,24 +1263,18 @@ button:focus-visible {
 /* SECTION A INTRO */
   .section-a-intro-titles{
     background-image: url('./assets/target-left.png'), url('./assets/target-right.png');
-    background-position: left, right;
-    background-size: contain, contain;
-    background-repeat: no-repeat, no-repeat;
+    background-position: -15% center, 115%center;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100px;
+    height: auto;
     padding-bottom: 3rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     margin-top: -2rem;
-    margin-bottom: 5rem;
-  }
-
-  .section-a-intro .section-a-intro-titles h2,
-  .section-a-intro .section-a-intro-titles h3,
-  .section-a-intro .section-a-intro-titles p {
-    transform: translateY(4.5rem);
+    margin-bottom: -2rem;
   }
 
   .section-a-intro-text{
@@ -1296,28 +1285,6 @@ button:focus-visible {
 /* SECTION A AUDIENCES */
   .section-a-audiences{
     margin-top: 3rem;
-  }
-
-  .catering-religius-frame {
-    background-image: url('./assets/religion-frame.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 1rem;
-  }
-
-  .catering-religius-title{
-    font-family: psfournier-std, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: var(--s16);
   }
 
   .ink-circle-container{
@@ -1359,8 +1326,40 @@ button:focus-visible {
     font-size: var(--s14);
   }
 
-  .religius-communities-text{
-    padding-top: 2rem;
+  .religious-communities,
+  .scholars,
+  .middle-class{
+    margin-bottom: -1rem;
+  }
+
+  .catering-religius-frame {
+    background-image: url('./assets/religion-frame.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .catering-religius-title, 
+  .appealing-scholars-title,
+  .middle-class-title {
+    font-family: psfournier-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: var(--s16);
+  }
+
+  .religius-communities-text,
+  .appealing-scholars-text,
+  .middle-class-text{
+    padding-top: 1rem;
     font-family: psfournier-std, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -1372,26 +1371,102 @@ button:focus-visible {
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: 250px;
     color: var(--c-grey1);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     font-size: var(--s16);
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .maria img{
+    width: 100px;
+    transform: translate(230%, -225%);
   }
 
-  .religius-communities-texttwo{
-    background-image: url('./assets/religion-paper.png');
-    background-position:  top;
+  .appealing-scholars-frame{
+    background-image: url('./assets/scholars-frame.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .appealing-scholars-title{
+    padding-top: 0.5rem;
+  }
+
+  .appealing-scholars-textone{
+    background-image: url('./assets/scholars-paper.png');
+    background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: 250px;
     color: var(--c-grey1);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2rem;
+    font-size: var(--s16);
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .scholargraph img{
+    width: 150px;
+    transform: translate(120%, -220%);
+  }
+
+  .middle-class-frame {
+    background-image: url('./assets/middleclass-frame.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .middle-class-textone{
+    background-image: url('./assets/middleclass-paper.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    color: var(--c-grey1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: var(--s16);
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .middleclass img{
+    width: 170px;
+    transform: translate(100%, -320%);
+  }
+
+  .middle-class{
+    margin-bottom: -3rem;
   }
 
 
@@ -1409,9 +1484,8 @@ button:focus-visible {
     flex-direction: column;
     align-items: center;
     margin-top: -2rem;
+    margin-bottom: -1.5rem;
   }
-
-
 
 
 /* SECTION P QUEST */
@@ -1459,7 +1533,7 @@ button:focus-visible {
   .p-quest-desc{
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   .p-quest-desc p{
@@ -1485,6 +1559,28 @@ button:focus-visible {
     font-size: var(--s24);
   }
 
+  .fa-times{
+    font-size: 1.5rem;
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  .solution-titles{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .solution-title{
+    font-family: tenon, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+  }
+
   .solution {
     background-color: #3350E9;
     color: var(--c-blue-white);
@@ -1493,6 +1589,12 @@ button:focus-visible {
     padding: 1.4rem;
     font-family: psfournier-std, sans-serif;
     font-weight: 400;
+  }
+
+  .solution strong{
+    font-family: tenon, sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .solution-button{
@@ -1509,42 +1611,198 @@ button:focus-visible {
     justify-self: center;
   }
 
-}
 
-.scholars{
-  background-image: url('./assets/scholars-frame.png'), url('./assets/scholars-paper.png') ;
-  background-position: center, center;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  width: 100%, 100%;
-  height: auto, auto;
-}
+/* SECTION C INTRO */
+  .section-c-intro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    background-image: url('./assets/handfight.png');
+    background-position: bottom left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
 
-.middle-class{
-  background-image: url('./assets/middleclass-frame.png'), url('./assets/middleclass-paper.png') ;
-  background-position: center, center;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  width: 100%, 100%;
-  height: auto, auto;
-}
+  .section-c-intro-titles{
+    background-image: url('./assets/handleft.png'), url('./assets/handright.png');
+    background-position: -15% center, 115%center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.5rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
+  }
 
-.section-c{
-  background-image: url('./assets/handleft.png'), url('./assets/handright.png'),url('./assets/handfight.png') ;
-  background-position: center, center, center;
-  background-size: contain, contain, contain;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  width: 100%, 100%, 100%;
-  height: auto, auto, auto;
-}
+  .section-c-intro-textone{
+    padding-bottom: 0.5rem;
+  }
 
-.section-u{
-  background-image: url('./assets/fireleft.png'), url('./assets/fireright.png') ;
-  background-position: center, center;
-  background-size: contain, contain;
-  background-repeat: no-repeat, no-repeat;
-  width: 100%, 100%;
-  height: auto, auto;
+  .section-c-intro-texttwo{
+    margin-top: 1rem;
+  }
+
+
+/* SECTION U INTRO */
+  .section-u-intro{
+    margin-bottom: 4rem;
+  }
+
+  .section-u-intro-titles{
+    background-image: url('./assets/fireleft.png'), url('./assets/fireright.png');
+    background-position: -15% center, 115%center;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%, 100%;
+    height: auto, auto;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+  }
+
+  .section-u-texttwo{
+    padding-top: 1rem;
+  }
+
+  .tickets-button{
+    display: flex;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+
+
+/* SECTION STORIES */
+  .storybook img{
+    width: 100px;
+    display: flex;
+    justify-self: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .stories-title{
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+
+  .explore-button{
+    display: flex;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+
+
+/* BUTTONS IN THE END */
+  .tickets-button,
+  .explore-button {
+  background-color: var(--c-blue-white);
+  color: var(--c-blue3);
+  border: 2px dashed var(--c-blue3);
+  padding: 0.8rem 1.6rem;
+  transition: border-color 0.25s;
+  }
+
+  .tickets-button:hover,
+  .explore-button:hover {
+    background-color: var(--c-grey1);
+    color: var(--c-blue-white);
+    border: 2px dashed var(--c-blue3);
+  }
+
+  .tickets-button:focus,
+  .tickets-button:focus-visible,
+  .explore-button:focus,
+  .explore-button:focus-visible {
+    background-color: var(--c-blue3);
+    color: var(--c-blue-white);
+    border: 2px dashed var(--c-blue-white);
+  }
+
+
+/* FOOTER */
+  footer{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-info{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .museum-name{
+    font-weight: 500;
+  }
+
+  .footer-info p {
+  font-size: var(--s16);
+  color: var(--c-grey1);
+  }
+
+  .footer-info p a {
+    color: var(--c-green1);
+    text-decoration: none;
+  }
+
+  .footer-info p a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-navigation{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-social{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .follow-us{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .social-icons{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .social-icons i{
+    font-size: 2rem;
+    color: var(--c-blue3);
+  }
+
+  .social-icons i:hover,
+  .social-icons i:focus{
+    font-size: 2rem;
+    color: var(--c-green1);
+  }
+
+  .footer-navitem {
+    font-family: tenon, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: var(--s16);
+    text-transform: uppercase;
+    border-bottom: 1px dashed var(--c-blue3);
+  }
+
+  .footer__navlink:hover {
+    font-weight: 700;
+    color: var(--c-blue3);
+  }
+
 }
 
 
