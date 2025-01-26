@@ -269,24 +269,21 @@ const inkColourText = () => {
 
     if (!isMobile) {
         inkTampon.addEventListener('mouseenter', () => {
-            inkTampon.addEventListener('mouseover', () => {
-                hoverTimer = setTimeout(() => {
-                    inkCircle.style.backgroundColor = 'black';
-                    religiousText.forEach(text => text.style.display = 'block');
-                }, 1700);
-            });
+            gsap.to(inkCircle, { duration: 2, backgroundColor: 'black' });
+
+            hoverTimer = setTimeout(() => {
+                gsap.to(religiousText, { duration: 1, display: 'block' });
+            }, 1700);
         });
 
         inkTampon.addEventListener('mouseleave', () => {
             clearTimeout(hoverTimer);
-            inkCircle.style.backgroundColor = '';
+            gsap.to(inkCircle, { duration: 2, backgroundColor: '' });
         });
-        inkCircle.style.transition = 'background-color 2s ease';
-
     } else {
         inkTampon.addEventListener('touchstart', () => {
-            inkCircle.style.backgroundColor = 'black';
-            religiousText.forEach(text => text.style.display = 'block');
+            gsap.to(inkCircle, { duration: 2, backgroundColor: 'black' });
+            gsap.to(religiousText, { duration: 1, display: 'block' });
         });
     }
 };
