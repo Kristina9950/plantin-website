@@ -216,40 +216,40 @@ button:focus-visible {
 }
 
 
-/* @media (prefers-contrast: more) {
+@media (prefers-contrast: more) {
   body {
-    background-color: var(--c-brown-dark);
-    color: var(--c-white);
+    background-color: var(--c-blue-white);
+    color: var(--c-green1);
   }
 
   a {
-    color: var(--c-yellow);
+    color: var(--c-blue3);
   }
 
   h1,
   h2,
   h3 {
-    color: var(--c-yellow);
+    color: var(--c-blue3);
+    font-weight: 800;
   }
 
   .menu__link {
-    border-bottom: 0.1rem solid var(--c-yellow);
-    color: var(--c-white);
+    border-bottom: 0.1rem solid var(--c-blue3);
+    color: var(--c-blue3);
   }
 
   .menu__link:before {
-    background-color: var(--c-yellow);
+    background-color: var(--c-blue3);
   }
 
   .menu__link:hover {
-    color: var(--c-white);
+    color: var(--c-green4);
   }
 
   main img {
-    border: 0.1rem solid var(--c-white);
+    border: 0.1rem solid var(--c-green4);
   }
-} */
-
+}
 
 /* MOBILE */
 @media screen and (min-width: 375px) {
@@ -928,6 +928,7 @@ button:focus-visible {
   .graph{
     display: flex;
     justify-self: center;
+    padding-bottom: 3rem;
   }
 
 
@@ -1338,7 +1339,7 @@ button:focus-visible {
   .religious-communities,
   .scholars,
   .middle-class{
-    margin-bottom: -1rem;
+    margin-bottom: -3rem;
   }
 
   .catering-religius-frame {
@@ -1433,9 +1434,30 @@ button:focus-visible {
   }
 
   .scholargraph img{
-    width: 150px;
+    width: 200px;
     transform: translate(120%, -220%);
   }
+
+  .middleclass {
+    transform: translate(180%, -370%);
+  }
+
+  .middle-class{
+    margin-bottom: -3rem;
+  }
+
+  .middle-class-texttwo{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transform: translateY(-7rem);
+  }
+
+  .appealing-scholars-texttwo{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transform: translateY(-7rem);
+  }
+
 
   .middle-class-frame {
     background-image: url('./assets/middleclass-frame.png');
@@ -1468,16 +1490,6 @@ button:focus-visible {
     padding-top: 2rem;
     margin-bottom: 1rem;
   }
-
-  .middleclass img{
-    width: 170px;
-    transform: translate(100%, -320%);
-  }
-
-  .middle-class{
-    margin-bottom: -3rem;
-  }
-
 
 /* SECTION P INTRO */
   .section-p-intro-titles{
@@ -2519,14 +2531,232 @@ button:focus-visible {
     padding-bottom: 0.5rem;
   }
 
-  
+
+/* SECTION A AUDIENCES */
+  .religious-communities {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ink-circle-w-instructions {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    z-index: 2;
+  }
+
+  .ink-circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .ink-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--c-blue-white);
+    border: 1px solid var(--c-green1);
+    z-index: 0;
+  }
+
+  .inktampon-religion {
+    z-index: 1;
+    position: relative;
+    width: 60px;
+    transform: translateY(-1rem);
+  }
+
+  .ink-icon {
+    color: var(--c-blue-white);
+    font-size: var(--s14);
+    padding: 0.3rem;
+  }
+
+  .ink-instructions {
+    font-size: var(--s14);
+    margin-top: 1rem;
+  }
+
+  .ink-circle-container:nth-child(2) {
+  display: none;
+  }
+
+  .ink-circle-container:nth-child(3) {
+  display: none;
+  }
+
+  .section-a-audiences{
+    margin-top: 10rem;
+  }
+
+  .religious-communities,
+  .scholars,
+  .middle-class{
+    margin-top: 5rem;
+  }
+
+  .catering-religius-frame {
+    background-image: url('./assets/religion-frame.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+    margin-bottom: -1rem;
+  }
+
+  .catering-religius-title, 
+  .appealing-scholars-title,
+  .middle-class-title {
+    font-size: var(--s26);
+  }
+
+  .religius-communities-text {
+    background-image: url('./assets/religion-paper.png');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 550px;
+    min-height: 350px;
+    color: var(--c-grey1);
+    font-size: var(--s16);
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    position: relative;
+  }
+
+  .religius-communities-texttwo{
+    transform: translateY(-7rem);
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .maria {
+    position: relative;
+    transform: translateY(150%);
+  }
+
+  .maria img {
+    width: 170px;
+  }
+
+  .religius-communities-textone{
+    background-image: none;
+  }
+
+  .appealing-scholars-frame{
+    background-image: url('./assets/scholars-frame.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+    margin-bottom: -1rem;
+  }
+
+  .appealing-scholars-text{
+    background-image: url('./assets/scholars-paper.png');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 550px;
+    min-height: 350px;
+    color: var(--c-grey1);
+    font-size: var(--s16);
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    position: relative;
+  }
+
+  .appealing-scholars-textone{
+    background-image: none;
+  }
 
 
+  .scholars{
+    justify-self: flex-end;
+  }
 
+  .scholargraph img {
+    width: 16rem;
+    transform: translateY(-8rem) translateX(24rem);
+  }
 
+  .middleclass img{
+    height: 5rem;
+  }
 
+  .middle-class-frame {
+    background-image: url('./assets/middleclass-frame.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+    margin-bottom: -1rem;
+  }
 
+  .middle-class-text{
+    background-image: url('./assets/middleclass-paper.png');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 550px;
+    min-height: 350px;
+    color: var(--c-grey1);
+    font-size: var(--s16);
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    position: relative;
+  }
 
+  .middle-class-textone {
+    background-image: none;
+  }
+
+  .middleclass img{
+    width: 170px;
+    transform: translate(100%, -320%);
+  }
+
+  .middle-class{
+    margin-bottom: -3rem;
+  }
 
 
 /* SECTION P INTRO */
@@ -2785,6 +3015,13 @@ button:focus-visible {
     align-self: flex-start;
     justify-self: flex-start;
     margin-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  
+  .dashed-circle{
+    display: none;
   }
 
 }
