@@ -2441,7 +2441,7 @@ button:focus-visible {
   .map img {
     width: 250px;
     top: 40%;
-    left: 21%;
+    left: 22%;
   }
 
   .ornate img {
@@ -2649,6 +2649,7 @@ button:focus-visible {
   }
 
   .ink-instructions {
+    display: contents;
     font-size: var(--s14);
     margin-top: 0.2rem;
   }
