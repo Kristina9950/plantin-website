@@ -147,8 +147,6 @@ button:focus-visible {
   border: 2px solid #3003f8;
 }
 
-/* .proofreader-container {
-} */
 .solution.hidden {
   display: none;
 }
@@ -565,6 +563,10 @@ button:focus-visible {
 
 
 /* MARKETING GENIUS */
+  .section-marketing-genius{
+    margin-bottom: 2rem;
+  }
+
   .marketing-genius-titles{
     text-align: center;
     margin-bottom: 1rem;
@@ -603,8 +605,8 @@ button:focus-visible {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
   }
 
   .identity-bubble{
@@ -780,6 +782,27 @@ button:focus-visible {
     color: var(--c-brown1);
   }
 
+  .blinking-red {
+    animation: blink-red 1s infinite;
+  }
+
+  @keyframes blink-red {
+    0%, 100% {
+      background-color: #D61212;
+    }
+    50% {
+      background-color: var(--c-blue-white);
+    }
+  }
+  .logo.hidden img {
+    display: none;
+  }
+
+  .logo.visible img {
+    display: block;
+  }
+
+
 
 /* SECTION IDENTITY LOGO */
   .section-identity-logo{
@@ -869,6 +892,7 @@ button:focus-visible {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-top: 1rem;
+    margin-bottom: 4rem;
   }
 
   .strategies-bubble{
@@ -1015,6 +1039,15 @@ button:focus-visible {
     z-index: 0;
   }
 
+  .collectors-container{
+    margin-bottom: 4rem;
+  }
+
+  .audiences-container{
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+  }
+
 
 /* SECTION SS INTRO */
   .section-ss-intro {
@@ -1110,6 +1143,7 @@ button:focus-visible {
     left: 55%;
   }
 
+  
   .bible-hover-page,
   .bible-hover-ornate,
   .bible-hover-map,
@@ -1320,7 +1354,7 @@ button:focus-visible {
   }
 
   .inktampon{
-    z-index: 1;
+    z-index: 2;
     position: relative;
     width: 60px;
     transform: translateY(-1rem);
@@ -1336,6 +1370,7 @@ button:focus-visible {
     font-size: var(--s14);
   }
 
+  
   .religious-communities,
   .scholars,
   .middle-class{
@@ -1434,12 +1469,13 @@ button:focus-visible {
   }
 
   .scholargraph img{
-    width: 200px;
-    transform: translate(120%, -220%);
+    width: 150px;
+    transform: translate(120%, -230%);
   }
 
-  .middleclass {
-    transform: translate(180%, -370%);
+  .middleclass img{
+    width: 150px;
+    transform: translate(120%, -370%);
   }
 
   .middle-class{
@@ -1447,17 +1483,15 @@ button:focus-visible {
   }
 
   .middle-class-texttwo{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    transform: translateY(-7rem);
+    margin-right: 1rem;
+    transform: translateY(-1rem);
   }
 
   .appealing-scholars-texttwo{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    transform: translateY(-7rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transform: translateY(-1rem);
   }
-
 
   .middle-class-frame {
     background-image: url('./assets/middleclass-frame.png');
@@ -1490,6 +1524,7 @@ button:focus-visible {
     padding-top: 2rem;
     margin-bottom: 1rem;
   }
+
 
 /* SECTION P INTRO */
   .section-p-intro-titles{
@@ -1831,9 +1866,7 @@ button:focus-visible {
     font-weight: 700;
     color: var(--c-blue3);
   }
-
 }
-
 
 
 /* DESKTOP */
@@ -2018,6 +2051,14 @@ button:focus-visible {
     z-index: 0;
   }
 
+  .identity-bubble-container{
+    margin-top: 6.5rem;
+  }
+
+  .plantin-bubble-container{
+    margin-bottom: 5rem;
+  }
+
 
 /* SECTION ABOUT PLANTIN */
   .section-about-plantin{
@@ -2081,7 +2122,7 @@ button:focus-visible {
 /* SECTION MARKETING GENIUS */
   .section-marketing-genius{
     margin-bottom: 3rem;
-    margin-top: 4rem;
+    margin-top: 7rem;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -2146,8 +2187,8 @@ button:focus-visible {
   }
 
   .section_idenity_text{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
 
@@ -2166,6 +2207,7 @@ button:focus-visible {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    padding-left: 4rem;
   }
 
   .guess_logo-intro{
@@ -2205,6 +2247,10 @@ button:focus-visible {
 /* SECTION IDENTITY LOGO */
   .section-identity-logo-front {
     transform: translateY(-2.5rem);
+  }
+
+  .section-identity-logo{
+    padding-left: 2rem;
   }
 
   .identity-logo-grid{
@@ -2290,7 +2336,6 @@ button:focus-visible {
   .about_strategies_text{
     grid-column: 2 / 10;
     grid-row: 1;
-    margin-left: -3rem;
   }
 
   .strategy_name-subtitle{
@@ -2392,7 +2437,7 @@ button:focus-visible {
   .map img {
     width: 250px;
     top: 40%;
-    left: 20%;
+    left: 21%;
   }
 
   .ornate img {
@@ -2698,18 +2743,8 @@ button:focus-visible {
     background-image: none;
   }
 
-
   .scholars{
     justify-self: flex-end;
-  }
-
-  .scholargraph img {
-    width: 16rem;
-    transform: translateY(-8rem) translateX(24rem);
-  }
-
-  .middleclass img{
-    height: 5rem;
   }
 
   .middle-class-frame {
@@ -2749,15 +2784,13 @@ button:focus-visible {
     background-image: none;
   }
 
-  .middleclass img{
-    width: 170px;
-    transform: translate(100%, -320%);
-  }
-
   .middle-class{
-    margin-bottom: -3rem;
+    margin-bottom: -2rem;
   }
 
+  .middle-class-texttwo{
+    transform: translateY(-4rem);
+  }
 
 /* SECTION P INTRO */
   .p_introtext-grid {
@@ -3016,6 +3049,13 @@ button:focus-visible {
     justify-self: flex-start;
     margin-top: 0rem;
   }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: -2rem;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -3023,5 +3063,15 @@ button:focus-visible {
   .dashed-circle{
     display: none;
   }
+}
 
+@media screen and (min-width: 1024px) {
+
+  .proofreader-rectangle {
+    width: 40rem;
+  }
+
+  .solution {
+    width: 40rem;
+  }
 }
