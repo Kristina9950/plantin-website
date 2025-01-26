@@ -9,6 +9,8 @@ const storylineImages = document.querySelectorAll('.storyline-images picture');
 const solutionButton = document.querySelector('.solution-button');
 const solutionDiv = document.querySelector('.solution');
 const closeSolutionButton = document.querySelector('.fa-times');
+const logo = document.querySelector('.logo');
+const circles = document.querySelectorAll('.meter-circle, .compases-circle, .sharpener-circle');
 
 
 const navigation = () => {
@@ -40,6 +42,8 @@ const navigation = () => {
         }
     });
 };
+
+
 
 const storyline = () => {
 bubbles.forEach((bubble, index) => {
@@ -74,9 +78,6 @@ const closeSolution = () => {
 };
 
 
-
-const logo = document.querySelector('.logo');
-const circles = document.querySelectorAll('.meter-circle, .compases-circle, .sharpener-circle');
 
 const logoInteraction = () => {
     let holdTimer = null;
@@ -192,10 +193,8 @@ const initBibleInteraction = () => {
         mapText.style.opacity = '0';
         woodcutText.style.opacity = '0';
     };
-
     bibleHoverImages.addEventListener('mouseover', handleHover);
     bibleHoverImages.addEventListener('mouseleave', resetVisibility);
-
     bibleHoverImages.addEventListener('touchmove', handleTouchMove, { passive: true });
 
     initVisibility();
@@ -204,7 +203,6 @@ const initBibleInteraction = () => {
 
 
 const moveBrownBubbles = () => {
-
     const createBubbleAnimation = (bubbleSelector, containerSelector) => {
         gsap.fromTo(bubbleSelector, {
             y: -100,
@@ -230,7 +228,6 @@ const moveBrownBubbles = () => {
 
 
 const moveWhiteBubbles = () => {
-
         const createBubbleAnimation = (bubbleSelector, containerSelector) => {
             gsap.fromTo(bubbleSelector, {
                 y: -100,
@@ -253,7 +250,6 @@ const moveWhiteBubbles = () => {
         createBubbleAnimation(".collectors", ".collectors-container");
         createBubbleAnimation(".proofreaders", ".proofreaders-container");
         createBubbleAnimation(".ultimate", ".ultimate-container");
-
 };
 
 
