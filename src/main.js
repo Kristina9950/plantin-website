@@ -255,6 +255,44 @@ const moveWhiteBubbles = () => {
 
 
 
+const inkColourText = () => {
+    const inkTampon = document.querySelector('.inktampon-religion');
+    const inkCircle = document.querySelector('.white-circle-religion');
+    const religiousText = document.querySelectorAll('.religius-communities-text p, .appealing-scholars-text p, .middle-class-text p');
+
+    religiousText.forEach(text => text.style.display = 'none');
+
+    let hoverTimer;
+    let touchTimer;
+
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+    if (!isMobile) {
+        inkTampon.addEventListener('mouseenter', () => {
+            inkTampon.addEventListener('mouseover', () => {
+                hoverTimer = setTimeout(() => {
+                    inkCircle.style.backgroundColor = 'black';
+                    religiousText.forEach(text => text.style.display = 'block');
+                }, 1700);
+            });
+        });
+
+        inkTampon.addEventListener('mouseleave', () => {
+            clearTimeout(hoverTimer);
+            inkCircle.style.backgroundColor = '';
+        });
+        inkCircle.style.transition = 'background-color 2s ease';
+
+    } else {
+        inkTampon.addEventListener('touchstart', () => {
+            inkCircle.style.backgroundColor = 'black';
+            religiousText.forEach(text => text.style.display = 'block');
+        });
+    }
+};
+
+
+
 
 const init = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -273,6 +311,7 @@ const init = () => {
     initBibleInteraction();
     moveBrownBubbles();
     moveWhiteBubbles();
+    inkColourText();
 };
 
 init();

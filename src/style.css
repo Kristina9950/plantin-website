@@ -1367,6 +1367,10 @@ button:focus-visible {
   }
 
   .ink-instructions{
+    display: none;
+  }
+
+  .ink-instructions-mobile{
     font-size: var(--s14);
   }
 
@@ -2577,6 +2581,20 @@ button:focus-visible {
   }
 
 
+  .religius-communities-text p,
+  .appealing-scholars-text p,
+  .middle-class-text p {
+    display: none;
+  }
+  
+  .white-circle-religion {
+    transition: background-color 5s ease;
+  }
+
+  .inktampon-religion {
+    cursor: grab;
+}
+
 /* SECTION A AUDIENCES */
   .religious-communities {
     position: relative;
@@ -2604,8 +2622,8 @@ button:focus-visible {
   }
 
   .ink-circle {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: var(--c-blue-white);
     border: 1px solid var(--c-green1);
@@ -2623,11 +2641,16 @@ button:focus-visible {
     color: var(--c-blue-white);
     font-size: var(--s14);
     padding: 0.3rem;
+    margin-top: 1.5rem;
+  }
+
+  .ink-instructions-mobile{
+    display: none;
   }
 
   .ink-instructions {
     font-size: var(--s14);
-    margin-top: 1rem;
+    margin-top: 0.2rem;
   }
 
   .ink-circle-container:nth-child(2) {
@@ -2791,6 +2814,7 @@ button:focus-visible {
   .middle-class-texttwo{
     transform: translateY(-4rem);
   }
+
 
 /* SECTION P INTRO */
   .p_introtext-grid {
@@ -3075,3 +3099,29 @@ button:focus-visible {
     width: 40rem;
   }
 }
+
+
+@media screen and (min-width: 560px) and (max-width: 960px) {
+    .hero-image {
+      background-image: url('./assets/hero-tablet.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 70vh;
+      margin-top: -4rem;
+      margin-bottom: -5rem;
+    }
+
+    .hero-image-text {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    transform: translateX(17%) translateY(180%);
+  }
+
+    .hero-text {
+    display: none;
+    }
+  }
